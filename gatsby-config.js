@@ -14,9 +14,7 @@ module.exports = {
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
-  module.exports = {
-    pathPrefix: "/reponame",
-  },
+  pathPrefix: "/uvaphilclub.github.io",
   plugins: [
     `gatsby-plugin-image`,
     {
