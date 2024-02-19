@@ -42,7 +42,7 @@ const IndexPage = () => (
             </Slide>
         </div>
         <div className="flex flex-wrap justify-center p-6 my-12 ">
-            <h1 className="text-5xl italic">"Funny rotating quote!"</h1>
+            <h1 className="text-5xl italic">"Funny rotating quote"</h1>
         </div>
         <div className="p-6 my-12"> 
             <h1 className="text-4xl">Club introduction</h1>
