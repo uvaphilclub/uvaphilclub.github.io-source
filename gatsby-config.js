@@ -14,6 +14,9 @@ module.exports = {
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
+  module.exports = {
+    pathPrefix: "/reponame",
+  },
   plugins: [
     `gatsby-plugin-image`,
     {
@@ -43,4 +46,5 @@ module.exports = {
       },
     },
   ],
+  
 }
