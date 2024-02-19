@@ -6,9 +6,12 @@
  */
 
 import * as React from "react"
+import Helmet from "react-helmet"
+import { withPrefix, Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import MobileMenu from "./mobileMenu"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -24,13 +27,12 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Helmet>
+        <script src={withPrefix('openMobileMenu.js')}  type="text/javascript" />
+      </Helmet>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: `var(--size-content)`,
-          padding: `var(--size-gutter)`,
-        }}
+      {/* <MobileMenu /> */}
+      <div className="max-w-4xl mx-auto"
       >
         <main>{children}</main>
         <footer

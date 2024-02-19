@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.list-container{
+    li {
+        h1 {
+          @apply text-2xl;
+        }
+      
+        p {
+          @apply text-xl;
+        }
+      }
+}
+
+.profiles{
+    div{
+        @apply size-40;
+    }
+    img{
+        @apply rounded-full;
+        // @apply size-40;
+    }
+    h1{
+        @apply text-center;
+        @apply text-xl;
+    }
+    h2{
+        @apply text-center;
+    }
+}
