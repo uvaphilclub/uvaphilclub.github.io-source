@@ -40,7 +40,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build && gh-pages -d public -b main"
+    "deploy": "gatsby build && gh-pages -d public -b main --repo https://github.com/uvaphilclub/uvaphilclub.github.io"
   },
   "repository": {
     "type": "git",
