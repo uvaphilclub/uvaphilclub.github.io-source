@@ -17,17 +17,38 @@
 
 .profiles{
     div{
-        @apply size-40;
+        @apply size-56;
     }
     img{
         @apply rounded-full;
-        // @apply size-40;
     }
     h1{
         @apply text-center;
         @apply text-xl;
     }
-    h2{
+    a{
         @apply text-center;
     }
 }
+.each-slide-effect > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 350px;
+    width: 350px;
+  }
+
+p{
+    color:black;
+}
+
+@keyframes rotateAnimation {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+.rotate-animation {
+    animation: rotateAnimation 2s infinite;
+    animation-fill-mode: forwards;
+  }

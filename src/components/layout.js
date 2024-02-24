@@ -32,18 +32,15 @@ const Layout = ({ children }) => {
       </Helmet>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       {/* <MobileMenu /> */}
-      <div className="max-w-4xl mx-auto"
+      <div className=""
       >
-        <main>{children}</main>
+        <main className="">{children}</main>
         <footer
           style={{
             marginTop: `var(--space-5)`,
             fontSize: `var(--font-sm)`,
           }}
         >
-          © {new Date().getFullYear()} &middot; Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer>
       </div>
     </>
