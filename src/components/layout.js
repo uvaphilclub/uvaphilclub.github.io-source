@@ -7,10 +7,11 @@
 
 import * as React from "react"
 import Helmet from "react-helmet"
-import { withPrefix, Link } from "gatsby"
+import { withPrefix} from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import ThinHeader from "./thin_header"
 import MobileMenu from "./mobileMenu"
 import "./layout.css"
 
@@ -30,7 +31,8 @@ const Layout = ({ children }) => {
       <Helmet>
         <script src={withPrefix('openMobileMenu.js')}  type="text/javascript" />
       </Helmet>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
+      <ThinHeader />
       {/* <MobileMenu /> */}
       <div className=""
       >

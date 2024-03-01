@@ -8,10 +8,10 @@ import * as styles from "../../components/index.module.css"
 
 const Archive = () => (
     <Layout>
-    <body className="max-w-4xl mx-auto">
-        <div class="flex flex-col flex-wrap items-center mt-12 mb-9">
-            <h1 class="text-4xl italic text-center">Previously pondered</h1>
-        </div>
+    <div class="flex flex-col flex-wrap items-center pt-12 pb-12 bg-blue">
+        <h1 class="text-4xl italic text-center">Previously pondered</h1>
+    </div>
+    <div className="max-w-4xl mx-auto mt-12">
         <div class="flex flex-col flex-wrap px-14 mb-60">
             <h1 class="text-3xl self-center mb-4">Fall 23</h1>
             <ul class="list-container space-y-10">
@@ -35,7 +35,7 @@ const Archive = () => (
                 </li>
             </ul>
         </div>
-    </body>
+    </div>
     </Layout>
 )
 
