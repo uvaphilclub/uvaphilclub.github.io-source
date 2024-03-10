@@ -24,6 +24,9 @@
     }
     h1{
         @apply text-center;
+        @apply text-2xl;
+    }
+    p{
         @apply text-xl;
     }
     a{
@@ -52,3 +55,7 @@ p{
     animation: rotateAnimation 2s infinite;
     animation-fill-mode: forwards;
   }
+
+  .custom-transition {
+  transition-duration: 2.5s; /* Custom transition duration in seconds */
+}

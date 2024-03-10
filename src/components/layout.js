@@ -9,6 +9,8 @@ import * as React from "react"
 import Helmet from "react-helmet"
 import { withPrefix} from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
+import { slide as Menu } from 'react-burger-menu'
+import { Link } from "gatsby"
 
 import Header from "./header"
 import ThinHeader from "./thin_header"
@@ -26,16 +28,71 @@ const Layout = ({ children }) => {
     }
   `)
 
+  var styles = {
+    bmBurgerButton: {
+      position: 'fixed',
+      width: '36px',
+      height: '30px',
+      right: '36px',
+      top: '36px'
+    },
+    bmBurgerBars: {
+      background: '#373a47'
+    },
+    bmBurgerBarsHover: {
+      background: '#a90000'
+    },
+    bmCrossButton: {
+      height: '24px',
+      width: '24px'
+    },
+    bmCross: {
+      background: '#bdc3c7'
+    },
+    bmMenuWrap: {
+      position: 'fixed',
+      height: '100%'
+    },
+    bmMenu: {
+      background: '#373a47',
+      padding: '2.5em 1.5em 0',
+      fontSize: '1.15em'
+    },
+    bmMorphShape: {
+      fill: '#373a47'
+    },
+    bmItemList: {
+      color: '#b8b7ad',
+      padding: '0.8em'
+    },
+    bmItem: {
+      display: 'inline-block'
+    },
+    bmOverlay: {
+      background: 'rgba(0, 0, 0, 0.3)'
+    }
+}
+
   return (
-    <>
+    <div id="outer-container">
+      <div className="md:hidden">
+        <Menu  styles={styles} outerContainerId={ "outer-container" } pageWrapId={ "page-wrap" }>
+          <main id="pagewrap">
+          <ul className="">
+            <li className="font-bold text-white hover:text-black py-4"><Link className="text-3xl" to="/">Home</Link></li>
+            <li className="font-bold text-white hover:text-black py-4"><Link className="text-3xl" to="/events">Events</Link></li>
+            <li className="font-bold text-white hover:text-black py-4"><Link className="text-3xl" to="/archive">Archive</Link></li>
+            <li className="font-bold text-white hover:text-black py-4"><Link className="text-3xl" to="/contact">Contact</Link></li>
+          </ul>
+          </main>
+        </Menu>
+      </div>
       <Helmet>
         <script src={withPrefix('openMobileMenu.js')}  type="text/javascript" />
       </Helmet>
       {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
       <ThinHeader />
       {/* <MobileMenu /> */}
-      <div className=""
-      >
         <main className="">{children}</main>
         <footer
           style={{
@@ -44,8 +101,7 @@ const Layout = ({ children }) => {
           }}
         >
         </footer>
-      </div>
-    </>
+    </div>
   )
 }
 
