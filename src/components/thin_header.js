@@ -1,6 +1,5 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { stack as Menu } from 'react-burger-menu'
 
 var styles = {
     bmBurgerButton: {
@@ -57,10 +56,10 @@ const ThinHeader = () => (
             <nav className="md:block self-center 2xl:self-auto"> 
                 <ul className="hidden md:block">
                     <li className="space-x-4 text-2xl mt-6">
-                        <Link className="font-bold text-white hover:text-black py-4 px-8" to="/">Home</Link>
-                        <Link className="font-bold text-white hover:text-black py-4 px-8" to="/events">Events</Link>
-                        <Link className="font-bold text-white hover:text-black py-4 px-8" to="/archive">Archive</Link> 
-                        <Link className="font-bold text-white hover:text-black py-4 px-8" to="/contact">Contact</Link>
+                        <Link className="font-bold text-white hover:text-black py-4 px-8" activeClassName="underline" to="/">Home</Link>
+                        <Link className="font-bold text-white hover:text-black py-4 px-8" activeClassName="underline" to="/events">Events</Link>
+                        <Link className="font-bold text-white hover:text-black py-4 px-8" activeClassName="underline" to="/archive">Archive</Link> 
+                        <Link className="font-bold text-white hover:text-black py-4 px-8" activeClassName="underline" to="/contact">Contact</Link>
                     </li>
                 </ul>
             </nav>

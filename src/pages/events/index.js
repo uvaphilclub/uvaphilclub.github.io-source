@@ -31,8 +31,9 @@ const Events = () => (
                         <p>Guest speaker - Gabriel Dumet</p>
                     </li>
                     <li>
-                        <h1>March 13th</h1>
-                        <p>TBD</p>
+                        <h1>March 13th - The Conditions For Praiseworthiness</h1>
+                        <p>Balz Philosophy Library, Cocke Hall - 6:30 PM</p>
+                        <p>Guest speaker - Blake Harris</p>
                     </li>
                     <li>
                         <h1>March 27th</h1>

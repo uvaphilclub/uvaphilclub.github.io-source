@@ -26,9 +26,9 @@ const slideShowItems = [
 const IndexPage = () => (
   <Layout>
    <body className="min-h-screen overflow-x-hidden">
-        <div className="flex flex-col 2xl:flex-row bg-blue justify-center pt-4 pb-6 items-center gap-12">
+        <div className="flex flex-col xl:flex-row bg-blue justify-center pt-4 pb-6 items-center gap-12">
             <FadeInFromLeft>
-            <div className="flex flex-col mb-4 max-w-xs sm:max-w-xl md:max-w-2xl 2xl:max-w-3xl mx-auto 2xl:ml-12">
+            <div className="flex flex-col mb-4 max-w-xs sm:max-w-xl xl:max-w-2xl 2xl:max-w-3xl mx-auto xl:ml-12 2xl:ml-12">
                 <div className="hidden sm:block text-6xl 2xl:text-8xl">
                     <h1 className="font-bold">THE</h1>
                     <h1>PHILOSOPHY CLUB<span className="text-3xl 2xl:text-5xl">@UVA</span></h1>
@@ -46,7 +46,7 @@ const IndexPage = () => (
             </div>
             </FadeInFromLeft>
             <FadeInFromRight>
-            <div className="sm:mx-auto md:p-5 md:bg-silver 2xl:p-10 basis-1/2 2xl:bg-gradient-to-r from-silver to-lightsilver 2xl:max-w-5xl">
+            <div className="sm:mx-auto md:p-5 md:bg-silver 2xl:p-10 basis-1/2 md:bg-gradient-to-r from-silver to-lightsilver 2xl:max-w-5xl">
                 <div className="block md:hidden">
                 <SimpleImageSlider 
                     width={375}
@@ -58,7 +58,18 @@ const IndexPage = () => (
                     autoPlayDelay={10}
                 />
                 </div>
-                <div className="hidden md:block">
+                <div className="hidden md:block 2xl:hidden">
+                <SimpleImageSlider 
+                    width={600}
+                    height={428}
+                    images={slideShowItems}
+                    showBullets={true}
+                    showNavs={true}
+                    autoPlay={true}
+                    autoPlayDelay={10}
+                />
+                </div>
+                <div className="hidden 2xl:block">
                 <SimpleImageSlider 
                     width={700}
                     height={500}
@@ -73,17 +84,17 @@ const IndexPage = () => (
             </FadeInFromRight>
         </div>
         <div className="bg-lightsilver">
-            <div className="flex flex-wrap m-auto px-6 py-16 justify-center"> 
+            <div className="flex flex-wrap flex-col m-auto px-6 py-16 justify-center"> 
                 <div className="flex flex-wrap gap-x-20 justify-center">
                 <FadeInLeftOnScroll>
                     <div className="w-64 self-center">
                         <h1 className="hidden lg:block text-6xl italic">About</h1>
                     </div>
                 </FadeInLeftOnScroll>
-                <FadeInRightOnScroll>
-                    <div className="max-w-2xl bg-blue rounded p-6 sm:shadow-[20px_20px_0px_0_rgba(0,0,0,0.3)]">
+                <FadeInRightOnScroll >
+                    <div className="max-w-2xl bg-blue rounded p-6 sm:shadow-[20px_20px_0px_0_rgba(0,0,0,0.3)] ">
                         <h1 className="lg:hidden text-4xl">About</h1>
-                        <p className="text-lg">The Philosophy Club at UVA is a student run CIO. We aim to provide an environment for 
+                        <p className="text-lg font-medium">The Philosophy Club at UVA is a student run CIO. We aim to provide an environment for 
                             those interested in philosophy to come together to discuss what fascinates them and meet others
                             with similar interests. We host several meetings a semester and are branching out into hosting a 
                             wider variety of events including major info sessions, community outreach, and fundraisers. 
@@ -92,20 +103,20 @@ const IndexPage = () => (
                 </FadeInRightOnScroll>
                 </div>
                 <div className="flex flex-wrap gap-x-20 mt-16 justify-center">
-                <FadeInLeftOnScroll>   
+                <FadeInLeftOnScroll delay={500}>   
                     <div className="w-64 self-center">
                         <h1 className="hidden lg:block text-6xl italic">Meetings</h1>
                     </div>
                 </FadeInLeftOnScroll> 
-                <FadeInRightOnScroll>
-                    <div className="max-w-2xl bg-blue rounded p-6 sm:shadow-[20px_20px_0px_0_rgba(0,0,0,0.3)]">
+                <FadeInRightOnScroll delay={500}>
+                    <div className="max-w-2xl font-medium bg-blue rounded p-6 sm:shadow-[20px_20px_0px_0_rgba(0,0,0,0.3)]">
                         <h2 className="lg:hidden text-3xl">Meetings</h2>
                         <p className="text-lg">
                             Meetings are where the discussion happens! Meeting are usually either student led or feature a 
-                            guest speaker from the Philosophy department, and are very relaxed. Topics cover all branches of 
+                            guest speaker from the Philosophy department, and are very relaxed. <p>Topics cover all branches of 
                             philosophy, both at a high level and at a practical level. 
                             No formal knowledge of philosophy is necessary to leave feeling thoughtful, so feel free to stop 
-                            by and listen in. 
+                            by and listen in. </p>
                         </p>
                         <p className="text-lg">
                             Usually held in the Balz Philosohpy Library, but locations may vary.
@@ -117,20 +128,20 @@ const IndexPage = () => (
                 </FadeInRightOnScroll>
                 </div>   
                 <div className="flex flex-wrap gap-x-20 mt-16 justify-center">
-                <FadeInLeftOnScroll>
+                <FadeInLeftOnScroll delay={1000}>
                     <div className="w-64 self-center">
                         <h1 className="hidden lg:block text-6xl italic">Special thanks to</h1>
                     </div>
                 </FadeInLeftOnScroll>
-                <FadeInRightOnScroll>
-                    <div className="max-w-2xl bg-blue rounded p-6 sm:shadow-[20px_20px_0px_0_rgba(0,0,0,0.3)]">
+                <FadeInRightOnScroll delay={1000}>
+                    <div className="max-w-2xl font-medium bg-blue rounded p-6 sm:shadow-[20px_20px_0px_0_rgba(0,0,0,0.3)]">
                         <h2 className="lg:hidden text-3xl">Special thanks to</h2>
                         <p className="text-lg">
                             Special thanks to our official advisor Mark Jeter and the Corcoran Department of Philosophy for making this club possible!
                             Without their help, we might've never existed{'(a scary thought on a philisophical level...)'}
                         </p>
                         <p className="text-lg">
-                            Learn more about the UVA Department of  Philosophy at: <span><a href="https://philosophy.virginia.edu/">https://philosophy.virginia.edu/</a></span>
+                            Learn more about the UVA Department of  Philosophy at: <span><a className="underline font-bold" href="https://philosophy.virginia.edu/">https://philosophy.virginia.edu/</a></span>
                         </p> 
                     </div>
                 </FadeInRightOnScroll>

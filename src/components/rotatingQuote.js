@@ -7,7 +7,10 @@ const QuoteComponent = () => {
     '"I think, therefore I am"',
     '"In Monopoly I only buy water works and electric company cause I\'m a utilitarian"',
     '"Hey, there\'s a trolley coming, who tied all these people to these train tracks?!? And what is this lever for?"',
-    '"Funny rotating quote"'
+    '"Funny rotating quote"', 
+    '"What don\'t you know that you don\'t know?"',
+    '"Calculating the answer to the Ultimate Question of Life, the Universe, and Everything..."',
+    '"42!"'
     ]; // Array of texts
   const [randomText, setRandomText] = useState(''); // State to hold random text
   const [isSpecialQuote, setIsSpecialQuote] = useState(false); 

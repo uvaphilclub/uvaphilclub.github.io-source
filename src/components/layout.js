@@ -6,15 +6,11 @@
  */
 
 import * as React from "react"
-import Helmet from "react-helmet"
-import { withPrefix} from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 import { slide as Menu } from 'react-burger-menu'
 import { Link } from "gatsby"
 
-import Header from "./header"
 import ThinHeader from "./thin_header"
-import MobileMenu from "./mobileMenu"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -87,12 +83,7 @@ const Layout = ({ children }) => {
           </main>
         </Menu>
       </div>
-      <Helmet>
-        <script src={withPrefix('openMobileMenu.js')}  type="text/javascript" />
-      </Helmet>
-      {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
       <ThinHeader />
-      {/* <MobileMenu /> */}
         <main className="">{children}</main>
         <footer
           style={{
