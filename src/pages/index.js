@@ -25,6 +25,9 @@ const slideShowItems = [
 
 const IndexPage = () => (
   <Layout>
+    <Helmet>
+        <meta name="description" content="The official website of the Philosophy Club at UVA"/>
+    </Helmet>
    <body className="min-h-screen overflow-x-hidden">
         <div className="flex flex-col xl:flex-row bg-blue justify-center pt-4 pb-6 items-center gap-12">
             <FadeInFromLeft>
@@ -119,7 +122,7 @@ const IndexPage = () => (
                             by and listen in. </p>
                         </p>
                         <p className="text-lg">
-                            Usually held in the Balz Philosohpy Library, but locations may vary.
+                            Usually held in the Philosohpy Library(located in Cocke Hall), but locations may vary.
                         </p>
                         <p className="text-lg">
                             Complementary donuts and coffee are also provided at each meeting.
@@ -152,8 +155,8 @@ const IndexPage = () => (
             <div className="flex flex-wrap flex-col justify-center max-w-4xl mx-4 sm:m-auto "> 
                 <h2 className="text-2xl mt-12 text-center">Join the Groupme to stay the most up to date</h2>
                 <div className="flex justify-center flex-wrap mt-8">
-                    <div className="size-40 rounded-lg">
-                        <StaticImage src="../images/groupme.jpg" />
+                    <div className="size-40">
+                        <StaticImage className="rounded-md" src="../images/groupme.jpg" />
                     </div>
                 </div>
             </div>

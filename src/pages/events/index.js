@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import { Helmet } from "react-helmet"
 
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
@@ -9,6 +10,10 @@ import * as styles from "../../components/index.module.css"
 const Events = () => (
     <Layout>
     <div>
+        <Helmet>
+            <title>Events | The Philosohpy Club at UVA</title>
+            <meta name="description" content="The schedule of the semester"></meta>
+        </Helmet>
         <div className="bg-blue">
             <div class="flex flex-col flex-wrap items-center pt-12 pb-12">
                 <h1 class="text-4xl italic text-center">Currently Contemplating</h1>
@@ -22,17 +27,17 @@ const Events = () => (
                 <ul class="list-container space-y-10">
                     <li>
                         <h1>February 12th - Welcome to the semester</h1>
-                        <p>Balz Philosohpy Library, Cocke Hall - 6:30 PM</p>
+                        <p>Philosohpy Library, Cocke Hall - 6:30 PM</p>
                         <p>What is a chair?</p>
                     </li>
                     <li>
                         <h1>February 28th - Criminal Punishment</h1>
-                        <p>Balz Philosohpy Library, Cocke Hall - 6:30 PM</p>
+                        <p>Philosohpy Library, Cocke Hall - 6:30 PM</p>
                         <p>Guest speaker - Gabriel Dumet</p>
                     </li>
                     <li>
                         <h1>March 13th - The Conditions For Praiseworthiness</h1>
-                        <p>Balz Philosophy Library, Cocke Hall - 6:30 PM</p>
+                        <p>Philosophy Library, Cocke Hall - 6:30 PM</p>
                         <p>Guest speaker - Blake Harris</p>
                     </li>
                     <li>

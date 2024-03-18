@@ -21,6 +21,7 @@
     }
     img{
         @apply rounded-full;
+        @apply overflow-hidden;
     }
     h1{
         @apply text-center;

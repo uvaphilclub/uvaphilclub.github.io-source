@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import { Helmet } from "react-helmet"
 
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
@@ -8,6 +9,10 @@ import * as styles from "../../components/index.module.css"
 
 const Archive = () => (
     <Layout>
+    <Helmet>
+        <title>Archive | The Philosohpy Club at UVA</title>
+        <meta name="description" content="The past events we've hosted"></meta>
+    </Helmet>
     <div class="flex flex-col flex-wrap items-center pt-12 pb-12 bg-blue">
         <h1 class="text-4xl italic text-center">Previously pondered</h1>
     </div>

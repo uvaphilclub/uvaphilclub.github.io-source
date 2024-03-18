@@ -1,58 +1,73 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+    <img alt="Gatsby" src="src/images/phil-icon-placeholder.jpeg" width="60" />
   </a>
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  The Philosophy Club at UVA
 </h1>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+The source code for the website of The Philosophy Club at UVA. The deployment build is at https://github.com/uvaphilclub/uvaphilclub.github.io. 
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+##  Quick start
 
-## 🚀 Quick start
+1.  **Prerequisites**
 
-1.  **Create a Gatsby site.**
+    [Node.js](https://nodejs.org/en/) installed on your machine 
+    
+    [Git](https://docs.github.com/en/get-started/getting-started-with-git/set-up-git) installed on your machine 
 
-    Use the Gatsby CLI ([install instructions](https://www.gatsbyjs.com/docs/tutorial/getting-started/part-0/#gatsby-cli)) to create a new site, specifying the default starter.
+1.  **Clone this repository somewhere convenient**
+    
+    https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
+    
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
+1.  **Install dependencies**
+
     ```
-
-1.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    cd my-default-starter/
-    gatsby develop
+    npm install 
     ```
+1. **Start the development server**
 
-1.  **Open the source code and start editing!**
+    ```
+    npx gatsby develop 
+    ```
+    View your site at `http://localhost:8000`
 
-    Your site is now running at `http://localhost:8000`!
+    Changes you make will be visible without reloading the page 
 
-    Note: You'll also see a second link: `http://localhost:8000/___graphql`. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby Tutorial](https://www.gatsbyjs.com/docs/tutorial/getting-started/part-4/#use-graphiql-to-explore-the-data-layer-and-write-graphql-queries).
+## Workflow 
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+All your work is done on this repository. Edit files and push them to https://github.com/uvaphilclub/uvaphilclub.github.io-source(which is where you cloned this repository from)
 
-## 🚀 Quick start (Netlify)
+When you want to deploy your changes, run
+```
+npx gatsby build 
+```
+to build the files, then 
+```
+npm run deploy 
+```
+to push the production files to https://github.com/uvaphilclub/uvaphilclub.github.io where they will be served as a Github pages page.
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+Preview the build with 
+```
+npx gatsby serve 
+```
+## Structure
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
-
-## 🧐 What's inside?
-
-A quick look at the top-level files and directories you'll see in a typical Gatsby project.
+Most of the descriptions here are leftover from the default readme
 
     .
     ├── node_modules
+    ├── public 
     ├── src
+        ├── components - react components 
+        ├── images - images
+        ├── pages - all of the pages of the site 
+        ├── styles - some css, most is inline with Tailwind
+        ├── templates - page templates 
     ├── .gitignore
     ├── gatsby-browser.js
     ├── gatsby-config.js
@@ -60,9 +75,14 @@ A quick look at the top-level files and directories you'll see in a typical Gats
     ├── gatsby-ssr.js
     ├── LICENSE
     ├── package.json
-    └── README.md
+    ├── postcss.config.js 
+    ├── README.md
+    ├── tailwind.config.js 
+    └──
 
 1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+
+1. **`/public`**: This directory contains the production files compiled when you run npx gatsby build. Do not modify them directly, they are recompiled every time you run the build command. When you run npm run deploy, these files will be pushed to https://github.com/uvaphilclub/uvaphilclub.github.io where they will be served as a github pages.
 
 1.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
 
@@ -82,18 +102,9 @@ A quick look at the top-level files and directories you'll see in a typical Gats
 
 1.  **`README.md`**: A text file containing useful reference information about your project.
 
-## 🎓 Learning Gatsby
+1. **`postcss.config.js`**: A file containing the plugins used by postcss.
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
+1. **`tailwind.config.js`**: Tailwind config information including some animations and theme configurations.
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/docs/tutorial/getting-started/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[Build, Deploy, and Host On Netlify](https://netlify.com)
-
-The fastest way to combine your favorite tools and APIs to build the fastest sites, stores, and apps for the web. And also the best place to build, deploy, and host your Gatsby sites.
 
 <!-- AUTO-GENERATED-CONTENT:END -->
