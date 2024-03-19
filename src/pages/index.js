@@ -26,6 +26,7 @@ const slideShowItems = [
 const IndexPage = () => (
   <Layout>
     <Helmet>
+        <title>Home | The Philosophy Club at UVA</title>
         <meta name="description" content="The official website of the Philosophy Club at UVA"/>
     </Helmet>
    <body className="min-h-screen overflow-x-hidden">

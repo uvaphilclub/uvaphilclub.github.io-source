@@ -11,7 +11,6 @@ import { slide as Menu } from 'react-burger-menu'
 import { Link } from "gatsby"
 
 import ThinHeader from "./thin_header"
-import "./layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

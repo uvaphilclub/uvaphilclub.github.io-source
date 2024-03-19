@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet"
 
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
-import * as styles from "../../components/index.module.css"
+
 
 const Archive = () => (
     <Layout>

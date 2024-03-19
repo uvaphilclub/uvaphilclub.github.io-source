@@ -5,7 +5,6 @@ import { Helmet } from "react-helmet"
 
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
-import * as styles from "../../components/index.module.css"
 
 const Events = () => (
     <Layout>
@@ -19,36 +18,69 @@ const Events = () => (
                 <h1 class="text-4xl italic text-center">Currently Contemplating</h1>
             </div>
         </div>
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
             <div class="px-14 mb-60">
-            <div className="flex flexwrap justify-center">
-                <h1 class="text-3xl mt-12 mb-9">Spring 24</h1>
+            <div className="flex">
+                <h1 class="text-7xl mt-12 mb-9">Spring 24</h1>
             </div>
-                <ul class="list-container space-y-10">
-                    <li>
-                        <h1>February 12th - Welcome to the semester</h1>
-                        <p>Philosohpy Library, Cocke Hall - 6:30 PM</p>
-                        <p>What is a chair?</p>
-                    </li>
-                    <li>
-                        <h1>February 28th - Criminal Punishment</h1>
-                        <p>Philosohpy Library, Cocke Hall - 6:30 PM</p>
-                        <p>Guest speaker - Gabriel Dumet</p>
-                    </li>
-                    <li>
-                        <h1>March 13th - The Conditions For Praiseworthiness</h1>
-                        <p>Philosophy Library, Cocke Hall - 6:30 PM</p>
-                        <p>Guest speaker - Blake Harris</p>
-                    </li>
-                    <li>
-                        <h1>March 27th</h1>
-                        <p>TBD</p>
-                    </li>
-                    <li>
-                        <h1>April 8th</h1>
-                        <p>TBD</p>
-                    </li>
-                </ul>
+            <div className="flex flex-wrap gap-16">
+                <div className="bg-light-black rounded-md ">
+                    <div className="flex flex-wrap flex-col h-64 justify-between w-64 bg-blue rounded-md m-4 p-4">
+                        <div>
+                            <h1 className="text-3xl">February 12th</h1>
+                            <h2 className="text-2xl">What is a chair?</h2>
+                        </div>
+                        <div className="text-md">
+                            <p>Philosohpy Library, Cocke Hall</p> 
+                            <p>6:30 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="">
+                    <div className="flex flex-wrap flex-col h-64 justify-between w-64 bg-blue rounded-md m-4 p-4 shadow-[20px_20px_0px_0_rgba(0,0,0,0.3)]">
+                        <div>
+                            <h1 className="text-3xl">February 28th</h1>
+                            <h2 className="text-2xl">Criminal Punishment</h2>
+                        </div>
+                        <div className="text-md">
+                            <p className="text-xl">Guest speaker: </p>
+                            <p className="text-xl">Gabriel Dumet</p>
+                            <p className="text-md">Philosohpy Library, Cocke Hall</p> 
+                            <p className="text-md">6:30 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="">
+                    <div className="flex flex-wrap flex-col h-64 justify-between w-64 bg-blue rounded-md m-4 p-4">
+                        <div>
+                            <h1 className="text-3xl">March 13th</h1>
+                            <h2 className="text-2xl">The Conditions for Praiseworthiness</h2>
+                        </div>
+                        <div className="text-md">
+                            <p className="text-xl">Guest speaker: </p>
+                            <p className="text-xl">Blake Harris</p>
+                            <p className="text-md">Philosohpy Library, Cocke Hall</p> 
+                            <p className="text-md">6:30 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div className="flex flex-wrap flex-col h-64 justify-between w-64 bg-blue rounded-md m-4 p-4">
+                        <div>
+                            <h1 className="text-3xl">March 27th</h1>
+                            <h2 className="text-2xl">TBD</h2>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div className="flex flex-wrap flex-col h-64 justify-between w-64 bg-blue rounded-md m-4 p-4">
+                        <div>
+                            <h1 className="text-3xl">April 8th</h1>
+                            <h2 className="text-2xl">TBD</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
     </div>

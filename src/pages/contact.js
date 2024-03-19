@@ -5,11 +5,11 @@ import { Helmet } from "react-helmet"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import * as styles from "../components/index.module.css"
 
 const Contact = () => ( 
     <Layout> 
     <Helmet>
+        <title>Contact | The Philosophy Club at UVA</title>
         <meta name="description" content="The contact information for the Philosophy Club at UVA"/>
     </Helmet>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
@@ -24,7 +24,7 @@ const Contact = () => (
                     Join the email list: <div className="text-2xl"><a href="https://lists.virginia.edu/sympa/subscribe/philorg" className="fa fa-envelope text-center"></a></div>
                 </li>
                 <li className="flex flex-wrap justify-between items-center">
-                    Follow us on Instagram: <div className="bg-blue flex flex-wrap text-2xl"><a href="https://www.instagram.com/uvaphilosophyclub/" className="fa fa-instagram w-6 text-[#FFFFFF] text-center"></a></div>
+                    Follow us on Instagram: <div className="bg-blue flex flex-wrap text-2xl ml-4"><a href="https://www.instagram.com/uvaphilosophyclub/" className="fa fa-instagram w-6 text-[#FFFFFF] text-center"></a></div>
                 </li>
             </ul>
         </div>

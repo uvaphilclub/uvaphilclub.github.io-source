@@ -39,7 +39,7 @@ The source code for the website of The Philosophy Club at UVA. The deployment bu
 
 ## Workflow 
 
-All your work is done on this repository. Edit files and push them to https://github.com/uvaphilclub/uvaphilclub.github.io-source(which is where you cloned this repository from)
+All your work is done on this repository. Edit files and push them to https://github.com/uvaphilclub/uvaphilclub.github.io-source (which is where you cloned this repository from)
 
 When you want to deploy your changes, run
 ```

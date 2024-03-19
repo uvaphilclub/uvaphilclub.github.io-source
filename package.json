@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "the-philosophy-club-at-uva",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "The source code of the Philosophy Club at UVA's website",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Grant Zou <grantbtzou@gmail.com>",
   "dependencies": {
     "gatsby": "^5.13.2",
     "gatsby-plugin-image": "^3.13.1",
