@@ -23,7 +23,7 @@ const Events = () => (
             <div className="flex">
                 <h1 class="text-7xl mt-12 mb-9">Spring 24</h1>
             </div>
-            <div className="flex flex-wrap gap-16">
+            <div className="flex flex-wrap gap-16 bg-dark-gray">
                 <div className="bg-light-black rounded-md ">
                     <div className="flex flex-wrap flex-col h-64 justify-between w-64 bg-blue rounded-md m-4 p-4">
                         <div>
@@ -50,8 +50,8 @@ const Events = () => (
                         </div>
                     </div>
                 </div>
-                <div className="">
-                    <div className="flex flex-wrap flex-col h-64 justify-between w-64 bg-blue rounded-md m-4 p-4">
+                <div className="bg-gray border">
+                    <div className="flex flex-wrap flex-col h-64 justify-between w-64 bg-blue  m-4 p-4 border">
                         <div>
                             <h1 className="text-3xl">March 13th</h1>
                             <h2 className="text-2xl">The Conditions for Praiseworthiness</h2>
@@ -65,8 +65,9 @@ const Events = () => (
                     </div>
                 </div>
                 <div>
-                    <div className="flex flex-wrap flex-col h-64 justify-between w-64 bg-blue rounded-md m-4 p-4">
+                    <div className="flex flex-wrap flex-col h-64 justify-between w-64 bg-blue shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4">
                         <div>
+                            
                             <h1 className="text-3xl">March 27th</h1>
                             <h2 className="text-2xl">TBD</h2>
                         </div>
