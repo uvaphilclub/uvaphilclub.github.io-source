@@ -13,19 +13,19 @@ const Events = () => (
             <title>Events | The Philosohpy Club at UVA</title>
             <meta name="description" content="The schedule of the semester"></meta>
         </Helmet>
-        <div className="bg-blue">
-            <div class="flex flex-col flex-wrap items-center pt-12 pb-12">
+        <div className="">
+            <div class="flex flex-col flex-wrap items-center bg-blue pt-12 pb-12">
                 <h1 class="text-4xl italic text-center">Currently Contemplating</h1>
             </div>
         </div>
-        <div className="max-w-6xl mx-auto">
-            <div class="px-14 mb-60">
-            <div className="flex">
-                <h1 class="text-7xl mt-12 mb-9">Spring 24</h1>
+        <div className="max-w-[1075px] min-w-72 mx-auto">
+            <div class="mb-60">
+            <div className="flex justify-center">
+                <h1 class="lg:text-start text-7xl mt-4 mb-9">Spring 24</h1>
             </div>
-            <div className="flex flex-wrap gap-16 bg-dark-gray">
-                <div className="bg-light-black rounded-md ">
-                    <div className="flex flex-wrap flex-col h-64 justify-between w-64 bg-blue rounded-md m-4 p-4">
+            <div className="flex flex-wrap justify-center gap-12 bg-dark-gray border-[16px] rounded border-silver p-10">
+                <div className="">
+                    <div className= "sticky-note flex flex-wrap flex-col h-64 justify-between w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4 rotate-[4deg]">
                         <div>
                             <h1 className="text-3xl">February 12th</h1>
                             <h2 className="text-2xl">What is a chair?</h2>
@@ -37,7 +37,7 @@ const Events = () => (
                     </div>
                 </div>
                 <div className="">
-                    <div className="flex flex-wrap flex-col h-64 justify-between w-64 bg-blue rounded-md m-4 p-4 shadow-[20px_20px_0px_0_rgba(0,0,0,0.3)]">
+                    <div className="sticky-note flex flex-wrap flex-col h-64 justify-between w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4 rotate-[-3deg]">
                         <div>
                             <h1 className="text-3xl">February 28th</h1>
                             <h2 className="text-2xl">Criminal Punishment</h2>
@@ -50,8 +50,8 @@ const Events = () => (
                         </div>
                     </div>
                 </div>
-                <div className="bg-gray border">
-                    <div className="flex flex-wrap flex-col h-64 justify-between w-64 bg-blue  m-4 p-4 border">
+                <div className="">
+                    <div className= "sticky-note flex flex-wrap flex-col h-64 justify-between w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4 rotate-[5deg]">
                         <div>
                             <h1 className="text-3xl">March 13th</h1>
                             <h2 className="text-2xl">The Conditions for Praiseworthiness</h2>
@@ -65,7 +65,7 @@ const Events = () => (
                     </div>
                 </div>
                 <div>
-                    <div className="flex flex-wrap flex-col h-64 justify-between w-64 bg-blue shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4">
+                    <div className="sticky-note flex flex-wrap flex-col h-64 justify-between w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4 rotate-[-5deg]">
                         <div>
                             
                             <h1 className="text-3xl">March 27th</h1>
@@ -74,11 +74,16 @@ const Events = () => (
                     </div>
                 </div>
                 <div>
-                    <div className="flex flex-wrap flex-col h-64 justify-between w-64 bg-blue rounded-md m-4 p-4">
+                    <div className= "sticky-note flex flex-wrap flex-col h-64 justify-between w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4 rotate-[4deg]">
                         <div>
                             <h1 className="text-3xl">April 8th</h1>
                             <h2 className="text-2xl">TBD</h2>
                         </div>
+                    </div>
+                </div>
+                <div>
+                    <div className= "sticky-note flex flex-wrap flex-col h-64 justify-between w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 rotate-[-4deg]">
+                        <StaticImage src="../../images/the-thinker.png" placeholder="blur"/>
                     </div>
                 </div>
             </div>

@@ -15,7 +15,8 @@ module.exports = {
       'silver' : '#C6C5B9',
       'lightsilver' : '#FAFAF9',
       'darksilver' : '#9c9a8e',
-      'black' : '#000000'
+      'black' : '#000000', 
+      'yellow' : '#FFFFCC'
     },
     extend: {
       screens: {
