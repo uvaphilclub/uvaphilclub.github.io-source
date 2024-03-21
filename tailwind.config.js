@@ -6,6 +6,7 @@ module.exports = {
   ],
   theme: {
     colors: {
+      'red' : '#DA7A5A',
       'blue' : '#62929e',
       'green' : '#538A2E',
       'gray' : '#546a7b',
@@ -15,6 +16,7 @@ module.exports = {
       'silver' : '#C6C5B9',
       'lightsilver' : '#FAFAF9',
       'darksilver' : '#9c9a8e',
+      'brown' : '#544741',
       'black' : '#000000', 
       'yellow' : '#FFFFCC'
     },

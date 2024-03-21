@@ -12,6 +12,9 @@ const Events = () => (
         <Helmet>
             <title>Events | The Philosohpy Club at UVA</title>
             <meta name="description" content="The schedule of the semester"></meta>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap')
+            </style>
         </Helmet>
         <div className="">
             <div class="flex flex-col flex-wrap items-center bg-blue pt-12 pb-12">
@@ -21,7 +24,7 @@ const Events = () => (
         <div className="max-w-[1075px] min-w-72 mx-auto">
             <div class="mb-60">
             <div className="flex justify-center">
-                <h1 class="lg:text-start text-7xl mt-4 mb-9">Spring 24</h1>
+                <h1 class="lg:text-start text-7xl mt-4 mb-9 font-sans">Spring 24</h1>
             </div>
             <div className="flex flex-wrap justify-center gap-12 bg-dark-gray border-[16px] rounded border-silver p-10">
                 <div className="">
