@@ -13,20 +13,16 @@ const Archive = () => (
     <Helmet>
         <title>Archive | The Philosohpy Club at UVA</title>
         <meta name="description" content="The past events we've hosted"></meta>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap')
-        </style>
     </Helmet>
     <div class="flex flex-col flex-wrap items-center pt-12 pb-12 bg-blue">
         <h1 class="text-4xl italic text-center">Previously pondered</h1>
     </div>
-    {/* style={{backgroundImage: `url(${legal})`}} */}
-        <div class="flex flex-col flex-wrap max-w-4xl mx-auto mt-12 px-14 mb-60" > 
+        <div class="flex flex-col flex-wrap max-w-4xl mx-auto mt-12 px-14 mb-60 font-['Lato']" > 
             <div className="bg-brown h-24"></div>
             <div className="flex flex-wrap bg-yellow h-14">
                 <div className="basis-1/6 border-r-4 border-red"></div>
                 <div className="basis-5/6 text-4xl self-center">
-                    <p className="ml-4 font-bold">Fall 23</p>
+                    <p className="ml-4">Fall 23</p>
                 </div>
             </div>
             <div className="flex flex-wrap bg-yellow h-14 border-t-2">
@@ -71,7 +67,7 @@ const Archive = () => (
             <div className="flex flex-wrap bg-yellow h-14 border-t-2">
                 <div className="basis-1/6 border-r-4 border-red"></div>
                 <div className="basis-5/6 text-4xl self-center">
-                    <p className="ml-4 font-bold">Spring 23</p>
+                    <p className="ml-4">Spring 23</p>
                 </div>
             </div>
             <div className="flex flex-wrap bg-yellow h-14 border-t-2">
@@ -86,6 +82,14 @@ const Archive = () => (
                 <div className="basis-5/6 text-2xl self-center">
                 <p className="ml-32 italic">Guest Speaker – Nikolina Cetic</p>
                 </div>
+            </div>
+            <div className="flex flex-wrap bg-yellow h-14 border-t-2">
+                <div className="basis-1/6 border-r-4 border-red"></div>
+                <div className="basis-5/6 text-2xl self-center"></div>
+            </div>
+            <div className="flex flex-wrap bg-yellow h-14 border-t-2">
+                <div className="basis-1/6 border-r-4 border-red"></div>
+                <div className="basis-5/6 text-2xl self-center"></div>
             </div>
             <div className="flex flex-wrap bg-yellow h-14 border-t-2">
                 <div className="basis-1/6 border-r-4 border-red"></div>

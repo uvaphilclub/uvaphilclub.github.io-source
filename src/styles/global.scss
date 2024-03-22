@@ -61,6 +61,10 @@ p{
   transition-duration: 2.5s; 
 }
 
+.sticky-note{
+  position:relative; 
+}
+
 .sticky-note:hover, .sticky-note:focus {
   box-shadow:10px 10px 7px rgba(0,0,0,.7);
   transform: scale(1.25);

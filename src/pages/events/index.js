@@ -12,9 +12,6 @@ const Events = () => (
         <Helmet>
             <title>Events | The Philosohpy Club at UVA</title>
             <meta name="description" content="The schedule of the semester"></meta>
-            <style>
-                @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap')
-            </style>
         </Helmet>
         <div className="">
             <div class="flex flex-col flex-wrap items-center bg-blue pt-12 pb-12">
@@ -24,11 +21,11 @@ const Events = () => (
         <div className="max-w-[1075px] min-w-72 mx-auto">
             <div class="mb-60">
             <div className="flex justify-center">
-                <h1 class="lg:text-start text-7xl mt-4 mb-9 font-sans">Spring 24</h1>
+                <h1 class="lg:text-start text-7xl mt-4 mb-6 font-['Lato']">Spring 24</h1>
             </div>
-            <div className="flex flex-wrap justify-center gap-12 bg-dark-gray border-[16px] rounded border-silver p-10">
+            <div className="flex flex-wrap justify-center gap-12 bg-dark-gray border-[16px] rounded border-silver p-10 font-['Shanti']">
                 <div className="">
-                    <div className= "sticky-note flex flex-wrap flex-col h-64 justify-between w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4 rotate-[4deg]">
+                    <div className= "sticky-note flex flex-wrap flex-col h-64 justify-between w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4 rotate-[4deg] -top-4">
                         <div>
                             <h1 className="text-3xl">February 12th</h1>
                             <h2 className="text-2xl">What is a chair?</h2>
@@ -54,7 +51,7 @@ const Events = () => (
                     </div>
                 </div>
                 <div className="">
-                    <div className= "sticky-note flex flex-wrap flex-col h-64 justify-between w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4 rotate-[5deg]">
+                    <div className= "sticky-note flex flex-wrap flex-col h-64 justify-between w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4 rotate-[5deg] -top-2">
                         <div>
                             <h1 className="text-3xl">March 13th</h1>
                             <h2 className="text-2xl">The Conditions for Praiseworthiness</h2>
@@ -68,7 +65,7 @@ const Events = () => (
                     </div>
                 </div>
                 <div>
-                    <div className="sticky-note flex flex-wrap flex-col h-64 justify-between w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4 rotate-[-5deg]">
+                    <div className="sticky-note flex flex-wrap flex-col h-64 justify-between w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4 rotate-[-5deg] -top-6">
                         <div>
                             
                             <h1 className="text-3xl">March 27th</h1>
@@ -77,7 +74,7 @@ const Events = () => (
                     </div>
                 </div>
                 <div>
-                    <div className= "sticky-note flex flex-wrap flex-col h-64 justify-between w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4 rotate-[4deg]">
+                    <div className= "sticky-note flex flex-wrap flex-col h-64 justify-between w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4 rotate-[4deg] -top-2">
                         <div>
                             <h1 className="text-3xl">April 8th</h1>
                             <h2 className="text-2xl">TBD</h2>
@@ -85,7 +82,7 @@ const Events = () => (
                     </div>
                 </div>
                 <div>
-                    <div className= "sticky-note flex flex-wrap flex-col h-64 justify-between w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 rotate-[-4deg]">
+                    <div className= "sticky-note flex flex-wrap flex-col h-64 justify-between w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 rotate-[-4deg] -top-3">
                         <StaticImage src="../../images/the-thinker.png" placeholder="blur"/>
                     </div>
                 </div>

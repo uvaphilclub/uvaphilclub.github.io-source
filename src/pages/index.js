@@ -33,15 +33,15 @@ const IndexPage = () => (
         <div className="flex flex-col xl:flex-row bg-blue justify-center pt-4 pb-6 items-center gap-12">
             <FadeInFromLeft>
             <div className="flex flex-col mb-4 max-w-xs sm:max-w-xl xl:max-w-2xl 2xl:max-w-3xl mx-auto xl:ml-12 2xl:ml-12">
-                <div className="hidden sm:block text-6xl 2xl:text-8xl">
+                <div className="hidden sm:block text-6xl 2xl:text-8xl ">
                     <h1 className="font-bold">THE</h1>
                     <h1>PHILOSOPHY CLUB<span className="text-3xl 2xl:text-5xl">@UVA</span></h1>
                 </div>
-                <div className="bg-lightsilver sm:shadow-[30px_30px_0px_0_rgba(0,0,0,0.3)] p-6 mt-10">
+                <div className="bg-lightsilver sm:shadow-[30px_30px_0px_0_rgba(0,0,0,0.3)] p-6 mt-10 ">
                     <div className="max-w-64">
                         <h1 className="text-5xl text-start italic">Our Mission</h1>
                     </div>
-                    <ul>
+                    <ul className="font-['Shanti']">
                         <li className="mt-5 text-2xl">1. Bring together those interested in philosophical inquiry through discussions and events. </li>
                         <li className="mt-5 text-2xl">2. Promote the study of philosophy to the entire UVA community.</li>
                         <li className="mt-5 text-2xl">3. Encourage a stronger connection between students and faculty in the Department of Philosophy.</li>
@@ -96,7 +96,7 @@ const IndexPage = () => (
                     </div>
                 </FadeInLeftOnScroll>
                 <FadeInRightOnScroll >
-                    <div className="max-w-2xl bg-blue rounded p-6 sm:shadow-[20px_20px_0px_0_rgba(0,0,0,0.3)] ">
+                    <div className="max-w-2xl bg-blue rounded p-6 sm:shadow-[20px_20px_0px_0_rgba(0,0,0,0.3)] font-['Shanti']">
                         <h1 className="lg:hidden text-4xl">About</h1>
                         <p className="text-lg font-medium">The Philosophy Club at UVA is a student run CIO. We aim to provide an environment for 
                             those interested in philosophy to come together to discuss what fascinates them and meet others
@@ -113,7 +113,7 @@ const IndexPage = () => (
                     </div>
                 </FadeInLeftOnScroll> 
                 <FadeInRightOnScroll delay={500}>
-                    <div className="max-w-2xl font-medium bg-blue rounded p-6 sm:shadow-[20px_20px_0px_0_rgba(0,0,0,0.3)]">
+                    <div className="max-w-2xl font-medium bg-blue rounded p-6 sm:shadow-[20px_20px_0px_0_rgba(0,0,0,0.3)] font-['Shanti']">
                         <h2 className="lg:hidden text-3xl">Meetings</h2>
                         <p className="text-lg">
                             Meetings are where the discussion happens! Meeting are usually either student led or feature a 
@@ -138,11 +138,10 @@ const IndexPage = () => (
                     </div>
                 </FadeInLeftOnScroll>
                 <FadeInRightOnScroll delay={1000}>
-                    <div className="max-w-2xl font-medium bg-blue rounded p-6 sm:shadow-[20px_20px_0px_0_rgba(0,0,0,0.3)]">
+                    <div className="max-w-2xl font-medium bg-blue rounded p-6 sm:shadow-[20px_20px_0px_0_rgba(0,0,0,0.3)] font-['Shanti']">
                         <h2 className="lg:hidden text-3xl">Special thanks to</h2>
                         <p className="text-lg">
                             Special thanks to our official advisor Mark Jeter and the Corcoran Department of Philosophy for making this club possible!
-                            Without their help, we might've never existed{'(a scary thought on a philisophical level...)'}
                         </p>
                         <p className="text-lg">
                             Learn more about the UVA Department of  Philosophy at: <span><a className="underline font-bold" href="https://philosophy.virginia.edu/">https://philosophy.virginia.edu/</a></span>
@@ -154,7 +153,7 @@ const IndexPage = () => (
         </div>
         <div className="bg-blue">
             <div className="flex flex-wrap flex-col justify-center max-w-4xl mx-4 sm:m-auto "> 
-                <h2 className="text-2xl mt-12 text-center">Join the Groupme to stay the most up to date</h2>
+                <h2 className="text-2xl mt-12 text-center font-['Shanti']">Join the Groupme to stay the most up to date</h2>
                 <div className="flex justify-center flex-wrap mt-8">
                     <div className="size-40">
                         <StaticImage className="rounded-md" src="../images/groupme.jpg" />
