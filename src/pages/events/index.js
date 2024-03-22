@@ -67,9 +67,14 @@ const Events = () => (
                 <div>
                     <div className="sticky-note flex flex-wrap flex-col h-64 justify-between w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4 rotate-[-5deg] -top-6">
                         <div>
-                            
                             <h1 className="text-3xl">March 27th</h1>
                             <h2 className="text-2xl">TBD</h2>
+                        </div>
+                        <div className="text-md">
+                            <p className="text-xl">Guest speaker: </p>
+                            <p className="text-xl">Ethan Butt</p>
+                            <p className="text-md">Philosohpy Library, Cocke Hall</p> 
+                            <p className="text-md">7:00 PM</p>
                         </div>
                     </div>
                 </div>
