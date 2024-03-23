@@ -39,6 +39,9 @@ module.exports = {
       animation: {
         'open-menu': 'open-menu 0.5s ease-in-out forwards',
         'rotateAnimation' : 'rotateAnimation 2s infinite'
+      },
+      backgroundImage:{
+        'radial-gradient': 'radial-gradient(circle, #62929e, #fdfdff)'
       }
     },
   },

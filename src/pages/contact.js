@@ -28,7 +28,7 @@ const Contact = () => (
                 </li>
             </ul>
         </div>
-        <div className="max-w-6xl mt-16 mb-16 mx-auto">
+        <div className="max-w-6xl mt-16 mb-16 mx-auto ">
             <h1 className="text-center text-5xl italic font-['Lato']">Meet the Team</h1>
             <div className="profiles m-10 mb-32 flex flex-wrap justify-center gap-y-32 gap-x-40 font-['Shanti']">
                 <div className="">
