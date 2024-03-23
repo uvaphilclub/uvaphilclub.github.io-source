@@ -41,11 +41,7 @@ The source code for the website of The Philosophy Club at UVA. The deployment bu
 
 All your work is done on this repository. Edit files and push them to https://github.com/uvaphilclub/uvaphilclub.github.io-source (which is where you cloned this repository from)
 
-When you want to deploy your changes, run
-```
-npx gatsby build 
-```
-to build the files, then 
+When you want to deploy your changes run
 ```
 npm run deploy 
 ```
@@ -53,6 +49,7 @@ to push the production files to https://github.com/uvaphilclub/uvaphilclub.githu
 
 Preview the build with 
 ```
+npx gatsby build
 npx gatsby serve 
 ```
 ## Structure
