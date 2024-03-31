@@ -18,7 +18,10 @@ const QuoteComponent = () => {
   useEffect(() => {
     // Function to select random text
     const selectRandomText = () => {
-      const randomIndex = Math.floor(Math.random() * texts.length);
+      var randomIndex = Math.floor(Math.random() * texts.length);
+      if(randomIndex === 5){
+        randomIndex = Math.floor(Math.random() * texts.length);
+      }
       setRandomText(texts[randomIndex]);
       setIsSpecialQuote(randomIndex === 5);
     };

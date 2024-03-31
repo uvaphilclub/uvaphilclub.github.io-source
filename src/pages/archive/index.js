@@ -104,7 +104,7 @@ const Archive = () => (
                 <div className="basis-5/6 text-2xl self-center"></div>
             </div>
         </div>
-        <div className="max-w-md mx-auto text-2xl mb-16 font-['Shanti']">
+        <div className="md:hidden max-w-md mx-auto text-2xl mb-16 font-['Shanti']">
             <div className="mx-4">
                 <h2 className="text-center mt-10 text-4xl">Fall 23</h2>
                 <p className="mt-4">Affirmative Action and Values in Higher Education</p>

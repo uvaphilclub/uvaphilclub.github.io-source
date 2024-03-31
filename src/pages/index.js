@@ -43,7 +43,7 @@ const IndexPage = () => (
                     </div>
                     <ul className="font-['Shanti']">
                         <li className="mt-5 text-2xl">1. Bring together those interested in philosophical inquiry through discussions and events. </li>
-                        <li className="mt-5 text-2xl">2. Promote the study of philosophy to the entire UVA community.</li>
+                        <li className="mt-5 text-2xl">2. Promote the study of philosophy to all of UVA and the broader Charlottesville area through community outreach.</li>
                         <li className="mt-5 text-2xl">3. Encourage a stronger connection between students and faculty in the Department of Philosophy.</li>
                     </ul>
                 </div>
@@ -116,18 +116,28 @@ const IndexPage = () => (
                     <div className="max-w-2xl font-medium bg-blue rounded p-6 sm:shadow-[20px_20px_0px_0_rgba(0,0,0,0.3)] font-['Shanti']">
                         <h2 className="lg:hidden text-3xl">Meetings</h2>
                         <p className="text-lg">
-                            Meetings are where the discussion happens! Meeting are usually either student led or feature a 
-                            guest speaker from the Philosophy department, and are very relaxed. <p>Topics cover all branches of 
-                            philosophy, both at a high level and at a practical level. 
-                            No formal knowledge of philosophy is necessary to leave feeling thoughtful, so feel free to stop 
-                            by and listen in. </p>
-                        </p>
-                        <p className="text-lg">
-                            Usually held in the Philosohpy Library(located in Cocke Hall), but locations may vary.
-                        </p>
-                        <p className="text-lg">
-                            Complementary donuts and coffee are also provided at each meeting.
-                        </p>
+                                Meetings are where the discussion happens! Meeting are usually either student led or feature a 
+                                guest speaker from the Philosophy department.
+                            </p>
+                        <ul className="list-disc text-lg ml-4">
+                            <li>
+                           
+                            <li>
+                            <p>Topics cover all branches of 
+                                philosophy, both in pure and applied philosophy. 
+                                No formal knowledge of philosophy is necessary to leave feeling thoughtful, so feel free to stop 
+                                by and listen in. </p>
+                            </li>
+                            </li>
+                            <li>
+                            <p className="text-lg">
+                                Usually held in the Philosophy Library (located in Cocke Hall), but locations may vary.
+                            </p></li>
+                            <li>
+                            <p className="text-lg">
+                                Complementary donuts and coffee are also provided at each meeting.
+                            </p></li>
+                        </ul>
                     </div>
                 </FadeInRightOnScroll>
                 </div>   
