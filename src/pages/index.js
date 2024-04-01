@@ -117,7 +117,7 @@ const IndexPage = () => (
                         <h2 className="lg:hidden text-3xl">Meetings</h2>
                         <p className="text-lg">
                                 Meetings are where the discussion happens! Meeting are usually either student led or feature a 
-                                guest speaker from the Philosophy department.
+                                guest speaker from the philosophy department.
                             </p>
                         <ul className="list-disc text-lg ml-4">
                             <li>
@@ -154,7 +154,7 @@ const IndexPage = () => (
                             Special thanks to our official advisor Mark Jeter and the Corcoran Department of Philosophy for making this club possible!
                         </p>
                         <p className="text-lg">
-                            Learn more about the UVA Department of  Philosophy at: <span><a className="underline font-bold" href="https://philosophy.virginia.edu/">https://philosophy.virginia.edu/</a></span>
+                            Learn more about the UVA Department of Philosophy at: <span><a className="underline font-bold" href="https://philosophy.virginia.edu/">https://philosophy.virginia.edu/</a></span>
                         </p> 
                     </div>
                 </FadeInRightOnScroll>

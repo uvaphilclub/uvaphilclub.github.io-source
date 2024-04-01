@@ -103,11 +103,11 @@ const Events = () => (
                     <div className="sticky-note flex flex-wrap flex-col h-64 justify-between w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4 rotate-[2.5deg] -top-6">
                         <div>
                             <h1 className="text-3xl">April 22nd</h1>
-                            <h2 className="text-2xl">Circularity in the Argument from Graduation</h2>
+                            <h2 className="text-2xl">Circularity in the Argument from Gradation</h2>
                         </div>
                         <div className="text-md">
                             <p className="text-xl">Prof. Ross Cameron</p>
-                            <p className="text-md">Philosohpy Library, Cocke Hall</p> 
+                            <p className="text-md">Philosophy Library, Cocke Hall</p> 
                             <p className="text-md">6:30 PM</p>
                         </div>
                     </div>
