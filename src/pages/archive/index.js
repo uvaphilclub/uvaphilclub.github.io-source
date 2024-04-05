@@ -14,7 +14,7 @@ const Archive = () => (
         <title>Archive | The Philosohpy Club at UVA</title>
         <meta name="description" content="The past events we've hosted"></meta>
     </Helmet>
-    <div class="flex flex-col flex-wrap items-center pt-12 pb-12 bg-blue">
+    <div class="flex flex-col flex-wrap items-center pt-12 pb-12 bg-green">
         <h1 class="text-4xl italic text-center">Previously pondered</h1>
     </div>
         <div class="hidden md:flex flex-col flex-wrap max-w-4xl mx-auto mt-12 mb-60 font-['Lato']" > 

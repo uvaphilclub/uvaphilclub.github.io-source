@@ -14,7 +14,7 @@ const Events = () => (
             <meta name="description" content="The schedule of the semester"></meta>
         </Helmet>
         <div className="">
-            <div class="flex flex-col flex-wrap items-center bg-blue pt-12 pb-12">
+            <div class="flex flex-col flex-wrap items-center bg-green pt-12 pb-12">
                 <h1 class="text-4xl italic text-center">Currently Contemplating</h1>
             </div>
         </div>
@@ -23,7 +23,7 @@ const Events = () => (
             <div className="flex justify-center">
                 <h1 class="lg:text-start text-7xl mt-4 mb-6 font-['Lato']">Spring 24</h1>
             </div>
-            <div className="flex flex-wrap gap-12 bg-dark-gray border-[16px] rounded border-silver p-10 font-['Shanti']">
+            <div className="flex flex-wrap justify-center gap-12 bg-dark-gray border-[16px] rounded border-silver p-10 font-['Shanti']">
                 <div className="">
                     <div className= "sticky-note flex flex-wrap flex-col h-64 justify-between w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4 rotate-[3deg] -top-4">
                         <div>

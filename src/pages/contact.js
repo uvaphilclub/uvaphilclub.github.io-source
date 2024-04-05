@@ -14,7 +14,7 @@ const Contact = () => (
     </Helmet>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
     <div className="min-h-screen mx-auto">
-        <div className="flex flex-wrap justify-center gap-x-20 py-6 bg-blue min-w-full">
+        <div className="flex flex-wrap justify-center gap-x-20 py-6 bg-green min-w-full">
             <h1 className="self-center text-4xl italic">Get Connected</h1>
             <ul className="text-xl font-['Shanti']">
                 <li className="flex flex-wrap justify-between">Join the GroupMe:<a href="https://groupme.com/join_group/93261535/MxmKm2Fi"><span>
@@ -24,7 +24,7 @@ const Contact = () => (
                     Join the email list: <div className="text-2xl"><a href="https://lists.virginia.edu/sympa/subscribe/philorg" className="fa fa-envelope text-center"></a></div>
                 </li>
                 <li className="flex flex-wrap justify-between items-center">
-                    Follow us on Instagram: <div className="bg-blue flex flex-wrap text-2xl ml-4"><a href="https://www.instagram.com/uvaphilosophyclub/" className="fa fa-instagram w-6 text-[#FFFFFF] text-center"></a></div>
+                    Follow us on Instagram: <div className="bg-green flex flex-wrap text-2xl ml-4"><a href="https://www.instagram.com/uvaphilosophyclub/" className="fa fa-instagram w-6 text-[#FFFFFF] text-center"></a></div>
                 </li>
             </ul>
         </div>

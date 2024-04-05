@@ -11,7 +11,7 @@ const ThinHeader = () => (
       </Helmet>
         <header className="flex flex-wrap flex-col content-center 2xl:flex-row justify-between border-b-4 pb-2 border-white bg-gray">
             <div className="flex flex-wrap items-end ml-4">
-                <h1 className="text-5xl sm:text-7xl"><span className="font-bold">THE</span> PHILOSOPHY CLUB</h1>
+                <h1 className="text-5xl sm:text-7xl">THE <span className="font-bold">PHILOSOPHY CLUB</span></h1>
                 <h2 className="text-2xl sm:text-3xl">@UVA</h2>
             </div>
             <nav className="md:block self-center 2xl:self-auto"> 
