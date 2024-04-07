@@ -14,7 +14,7 @@ const Events = () => (
             <meta name="description" content="The schedule of the semester"></meta>
         </Helmet>
         <div className="">
-            <div class="flex flex-col flex-wrap items-center bg-green pt-12 pb-12">
+            <div class="flex flex-col flex-wrap items-center bg-blue pt-12 pb-12">
                 <h1 class="text-4xl italic text-center">Currently Contemplating</h1>
             </div>
         </div>

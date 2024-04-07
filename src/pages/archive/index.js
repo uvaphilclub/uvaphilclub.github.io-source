@@ -14,10 +14,10 @@ const Archive = () => (
         <title>Archive | The Philosohpy Club at UVA</title>
         <meta name="description" content="The past events we've hosted"></meta>
     </Helmet>
-    <div class="flex flex-col flex-wrap items-center pt-12 pb-12 bg-green">
+    <div class="flex flex-col flex-wrap items-center pt-12 pb-12 bg-blue">
         <h1 class="text-4xl italic text-center">Previously pondered</h1>
     </div>
-        <div class="hidden md:flex flex-col flex-wrap max-w-4xl mx-auto mt-12 mb-60 font-['Lato']" > 
+        <div class="hidden md:flex flex-col flex-wrap max-w-4xl mx-auto mt-12 mb-60 font-['Lato']"> 
             <div className="bg-brown h-24"></div>
             <div className="flex flex-wrap bg-yellow h-14">
                 <div className="basis-1/6 border-r-4 border-red"></div>

@@ -17,6 +17,8 @@ module.exports = {
       'lightsilver' : '#FAFAF9',
       'darksilver' : '#9c9a8e',
       'brown' : '#544741',
+      'brown2': '#a07d65',
+      'brown3' : '#7a5d54',
       'black' : '#000000', 
       'yellow' : '#FFFFCC'
     },

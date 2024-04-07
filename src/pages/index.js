@@ -30,7 +30,7 @@ const IndexPage = () => (
         <meta name="description" content="The official website of the Philosophy Club at UVA"/>
     </Helmet>
    <body className="min-h-screen overflow-x-hidden">
-        <div className="flex flex-col xl:flex-row bg-green justify-center pt-4 pb-6 items-center gap-12">
+        <div className="flex flex-col xl:flex-row bg-blue justify-center pt-4 pb-6 items-center gap-12">
             <FadeInFromLeft>
             <div className="flex flex-col mb-4 max-w-xs sm:max-w-xl xl:max-w-2xl 2xl:max-w-3xl mx-auto xl:ml-12 2xl:ml-12">
                 <div className="hidden sm:block text-6xl 2xl:text-8xl ">
@@ -50,7 +50,7 @@ const IndexPage = () => (
             </div>
             </FadeInFromLeft>
             <FadeInFromRight>
-            <div className="sm:mx-auto md:p-5 md:bg-silver 2xl:p-10 basis-1/2 md:bg-gradient-to-r from-silver to-lightsilver 2xl:max-w-5xl">
+            <div className="sm:mx-auto md:p-5 2xl:p-10 basis-1/2 md:bg-brown2 2xl:max-w-5xl">
                 <div className="block md:hidden">
                 <SimpleImageSlider 
                     width={375}
@@ -96,7 +96,7 @@ const IndexPage = () => (
                     </div>
                 </FadeInLeftOnScroll>
                 <FadeInRightOnScroll >
-                    <div className="max-w-2xl bg-green rounded p-6 sm:shadow-[20px_20px_0px_0_rgba(0,0,0,0.3)] font-['Shanti']">
+                    <div className="max-w-2xl bg-blue rounded p-6 sm:shadow-[20px_20px_0px_0_rgba(0,0,0,0.3)] font-['Shanti']">
                         <h1 className="lg:hidden text-4xl text-white">About</h1>
                         <p className="text-lg font-medium text-white">The Philosophy Club at UVA is a student run CIO. We aim to provide an environment for 
                             those interested in philosophy to come together to discuss what fascinates them and meet others
@@ -113,7 +113,7 @@ const IndexPage = () => (
                     </div>
                 </FadeInLeftOnScroll> 
                 <FadeInRightOnScroll delay={500}>
-                    <div className="max-w-2xl font-medium bg-green text-white rounded p-6 sm:shadow-[20px_20px_0px_0_rgba(0,0,0,0.3)] font-['Shanti']">
+                    <div className="max-w-2xl font-medium bg-blue text-white rounded p-6 sm:shadow-[20px_20px_0px_0_rgba(0,0,0,0.3)] font-['Shanti']">
                         <h2 className="lg:hidden text-3xl">Meetings</h2>
                         <p className="text-lg text-white">
                                 Meetings are where the discussion happens! Meeting are usually either student led or feature a 
@@ -145,7 +145,7 @@ const IndexPage = () => (
                     </div>
                 </FadeInLeftOnScroll>
                 <FadeInRightOnScroll delay={1000}>
-                    <div className="max-w-2xl font-medium bg-green rounded p-6 sm:shadow-[20px_20px_0px_0_rgba(0,0,0,0.3)] font-['Shanti']">
+                    <div className="max-w-2xl font-medium bg-blue rounded p-6 sm:shadow-[20px_20px_0px_0_rgba(0,0,0,0.3)] font-['Shanti']">
                         <h2 className="lg:hidden text-3xl text-white">Special thanks to</h2>
                         <p className="text-lg text-white">
                             Special thanks to our official advisor Mark Jeter and the Corcoran Department of Philosophy for making this club possible!
@@ -158,7 +158,7 @@ const IndexPage = () => (
                 </div>
             </div>
         </div>
-        <div className="bg-green">
+        <div className="bg-blue">
             <div className="flex flex-wrap flex-col justify-center max-w-4xl mx-4 sm:m-auto "> 
                 <h2 className="text-2xl mt-12 text-center font-['Shanti']">Join the Groupme to stay the most up to date</h2>
                 <div className="flex justify-center flex-wrap mt-8">
