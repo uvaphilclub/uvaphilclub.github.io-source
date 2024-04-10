@@ -65,26 +65,10 @@ const Contact = () => (
                 </div>
                 <div className="">
                     <StaticImage src="../images/Gavin-crop.jpg" alt="Gavin Schultz" placeholder="blur"/>
-                    <h1>Member at Large</h1>
+                    <h1>Secretary</h1>
                     <div className="text-center">
                         <p>Gavin Schultz </p>
                         <a href="mailto: wbn6ed@virginia.edu">wbn6ed@virginia.edu &#9993;</a>
-                    </div>
-                </div>
-                <div className="">
-                    <StaticImage src="../images/forest.jpg" alt="Forest Du" placeholder="blur"/>
-                    <h1>Secretary</h1>
-                    <div className="text-center">
-                        <p>Forest Du </p>
-                        <a href="mailto: nsu5jw@virginia.edu">nsu5jw@virginia.edu &#9993;</a>
-                    </div>
-                </div>
-                <div className="">
-                    <StaticImage src="../images/Grant.jpg" alt="Grant Zou" placeholder="blur"/>
-                    <h1>Webmaster</h1>
-                    <div className="text-center">
-                        <p>Grant Zou</p>
-                        <a href="mailto: sth3mm@virginia.edu">sth3mm@virginia.edu &#9993;</a>
                     </div>
                 </div>
                 <div className="">
@@ -93,6 +77,14 @@ const Contact = () => (
                     <div className="text-center">
                         <p>Beckett Wilkinson</p>
                         <a href="mailto: hgh6qr@virginia.edu">hgh6qr@virginia.edu &#9993;</a>
+                    </div>
+                </div>
+                <div className="">
+                    <StaticImage src="../images/Grant.jpg" alt="Grant Zou" placeholder="blur"/>
+                    <h1>Webmaster</h1>
+                    <div className="text-center">
+                        <p>Grant Zou</p>
+                        <a href="mailto: sth3mm@virginia.edu">sth3mm@virginia.edu &#9993;</a>
                     </div>
                 </div>
             </div>

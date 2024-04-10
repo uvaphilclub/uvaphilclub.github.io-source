@@ -25,7 +25,7 @@ const Events = () => (
             </div>
             <div className="flex flex-wrap justify-center gap-12 bg-dark-gray border-[16px] rounded border-silver p-10 font-['Shanti']">
                 <div className="">
-                    <div className= "sticky-note flex flex-wrap flex-col h-64 justify-between w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4 rotate-[3deg] -top-4">
+                    <div className= "sticky-note flex flex-wrap flex-col h-64 justify-between w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4 rotate-[2deg] -top-4">
                         <div>
                             <h1 className="text-3xl">February 12th</h1>
                             <h2 className="text-2xl">What is a chair?</h2>
@@ -51,7 +51,7 @@ const Events = () => (
                     </div>
                 </div>
                 <div className="">
-                    <div className= "sticky-note flex flex-wrap flex-col h-64 justify-between w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4 rotate-[5deg] -top-2">
+                    <div className= "sticky-note flex flex-wrap flex-col h-64 justify-between w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4 rotate-[3.5deg] -top-2">
                         <div>
                             <h1 className="text-3xl">March 13th</h1>
                             <h2 className="text-2xl">The Conditions for Praiseworthiness</h2>
@@ -65,7 +65,7 @@ const Events = () => (
                     </div>
                 </div>
                 <div>
-                    <div className="sticky-note flex flex-wrap flex-col h-64 justify-between w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4 rotate-[-4deg] -top-6">
+                    <div className="sticky-note flex flex-wrap flex-col h-64 justify-between w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4 rotate-[-3deg] -top-6">
                         <div>
                             <h1 className="text-3xl">March 27th</h1>
                             <h2 className="text-2xl">Why Faith is Always Rational</h2>
@@ -79,7 +79,7 @@ const Events = () => (
                     </div>
                 </div>
                 <div>
-                    <div className= "sticky-note flex flex-wrap flex-col h-64 justify-between w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4 rotate-[4deg] -top-2">
+                    <div className= "sticky-note flex flex-wrap flex-col h-64 justify-between w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4 rotate-[1deg] -top-2">
                         <div>
                             <h1 className="text-3xl">April 8th</h1>
                             <h2 className="text-2xl">How Do We Know What is Possible?</h2>
@@ -93,7 +93,7 @@ const Events = () => (
                     </div>
                 </div>
                 <div>
-                    <div className= "sticky-note flex flex-wrap flex-col h-64 justify-between w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4 rotate-[-4deg] -top-3">
+                    <div className= "sticky-note flex flex-wrap flex-col h-64 justify-between w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4 rotate-[-3deg] -top-3">
                         <div>
                             <h1 className="text-3xl">April 16th</h1>
                             <h2 className="text-2xl">Chipotle Fundraiser</h2>
