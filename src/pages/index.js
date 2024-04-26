@@ -30,9 +30,9 @@ const IndexPage = () => (
         <meta name="description" content="The official website of the Philosophy Club at UVA"/>
     </Helmet>
    <body className="min-h-screen overflow-x-hidden">
-        <div className="flex flex-col xl:flex-row bg-blue justify-center pt-4 pb-6 items-center gap-12">
+        <div className="flex flex-col xl:flex-row bg-blue justify-center pt-4 pb-20 items-center sm:gap-12">
             <FadeInFromLeft>
-            <div className="flex flex-col mb-4 max-w-xs sm:max-w-xl xl:max-w-2xl 2xl:max-w-3xl mx-auto xl:ml-12 2xl:ml-12">
+            <div className="flex flex-col mb-4  sm:max-w-xl xl:max-w-2xl 2xl:max-w-3xl mx-auto xl:ml-12 2xl:ml-12">
                 <div className="hidden sm:block text-6xl 2xl:text-8xl ">
                     <h1>THE</h1>
                     <h1 className="font-bold">PHILOSOPHY CLUB<span className="text-3xl 2xl:text-5xl font-normal">@UVA</span></h1>
@@ -50,39 +50,45 @@ const IndexPage = () => (
             </div>
             </FadeInFromLeft>
             <FadeInFromRight>
-            <div className="sm:mx-auto md:p-5 2xl:p-10 basis-1/2 md:bg-brown2 2xl:max-w-5xl">
-                <div className="block md:hidden">
-                <SimpleImageSlider 
-                    width={375}
-                    height={268}
-                    images={slideShowItems}
-                    showBullets={true}
-                    showNavs={true}
-                    autoPlay={true}
-                    autoPlayDelay={10}
-                />
+            <div className="sm:mx-auto mt-20 basis-1/2  2xl:max-w-5xl">
+                <div className="outerBevel">
+                <div className="flatSurface">
+                <div className="innerBevel">
+                    <div className="block md:hidden">
+                        <SimpleImageSlider 
+                            width={325}
+                            height={250}
+                            images={slideShowItems}
+                            showBullets={true}
+                            showNavs={true}
+                            autoPlay={true}
+                            autoPlayDelay={10}
+                        />
+                    </div>
+                    <div className="hidden md:block 2xl:hidden">
+                        <SimpleImageSlider 
+                            width={600}
+                            height={428}
+                            images={slideShowItems}
+                            showBullets={true}
+                            showNavs={true}
+                            autoPlay={true}
+                            autoPlayDelay={10}
+                        />
+                    </div>
+                    <div className="hidden 2xl:block">
+                        <SimpleImageSlider 
+                            width={700}
+                            height={500}
+                            images={slideShowItems}
+                            showBullets={true}
+                            showNavs={true}
+                            autoPlay={true}
+                            autoPlayDelay={10}
+                        />
+                    </div>
                 </div>
-                <div className="hidden md:block 2xl:hidden">
-                <SimpleImageSlider 
-                    width={600}
-                    height={428}
-                    images={slideShowItems}
-                    showBullets={true}
-                    showNavs={true}
-                    autoPlay={true}
-                    autoPlayDelay={10}
-                />
                 </div>
-                <div className="hidden 2xl:block">
-                <SimpleImageSlider 
-                    width={700}
-                    height={500}
-                    images={slideShowItems}
-                    showBullets={true}
-                    showNavs={true}
-                    autoPlay={true}
-                    autoPlayDelay={10}
-                />
                 </div>
             </div>
             </FadeInFromRight>
@@ -171,7 +177,7 @@ const IndexPage = () => (
             <QuoteComponent />
             </div>
         </div>
-        <div className="bg-gray">
+        <div className="h-full bg-gray">
             <div className="flex flex-wrap justify-center max-w-4xl mx-4 lg:m-auto"> 
                 <div className="mt-6 text-xs">
                     <p>Although this organization has members who are University of Virginia students and may

@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 
+html{
+  background-color: #546a7b;
+}
+
+body{
+  background-color:white;
+}
+
 .list-container{
     li {
         h1 {
@@ -16,7 +24,7 @@
 }
 
 .profiles{
-    div{
+    .gatsby-image-wrapper{
         @apply size-56;
     }
     img{
@@ -71,3 +79,20 @@ p{
   position:relative;
   z-index:5;
 }
+
+.outerBevel { /* of frame */
+	box-shadow:				4px 6px 12px 0 rgb(20, 20, 20);
+	border-width:			5px;
+	border-style:			solid;
+	border-color:			rgb(109, 84, 58) rgb(40, 40, 40) rgb(40, 40, 40) rgb(109, 84, 58);
+	}
+
+.flatSurface { /* of frame */
+	border:						12px solid rgb(65, 40, 16);
+	}
+
+.innerBevel { /* of frame */
+	border-width:			5px;
+	border-style:			solid;
+	border-color:			rgb(24, 19, 13)	rgb(109, 84, 58) rgb(109, 84, 58) rgb(24, 19, 13);
+	}

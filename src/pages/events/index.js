@@ -19,7 +19,7 @@ const Events = () => (
             </div>
         </div>
         <div className="max-w-[1075px] min-w-72 mx-auto">
-            <div class="mb-60">
+            <div class="mb-16 pb-16">
             <div className="flex justify-center">
                 <h1 class="lg:text-start text-7xl mt-4 mb-6 font-['Lato']">Spring 24</h1>
             </div>
@@ -109,7 +109,7 @@ const Events = () => (
                     <div className="sticky-note flex flex-wrap flex-col h-64 justify-between w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4 rotate-[2.5deg] -top-6">
                         <div>
                             <h1 className="text-3xl">April 22nd</h1>
-                            <h2 className="text-2xl">Circularity in the Argument from Gradation</h2>
+                            <h2 className="text-2xl">Reality Going In Circles</h2>
                         </div>
                         <div className="text-md">
                             <p className="text-xl">Prof. Ross Cameron</p>
