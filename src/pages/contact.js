@@ -32,7 +32,7 @@ const Contact = () => (
             <h1 className="text-center text-5xl italic font-['Lato']">Meet the Team</h1>
             <div className="profiles m-10 flex flex-wrap justify-center gap-y-12 gap-x-40 font-['Shanti']">
                 <div className="">
-                    <StaticImage className="overflow-hidden" src="../images/zach_wider.jpg" alt="Zack Montalvo" placeholder="blur"/>
+                    <StaticImage className="overflow-hidden" src="../images/zach_wider.jpg" alt="Picture of Zack Montalvo" placeholder="blur"/>
                     <h1>President</h1>
                     <div className="text-center">
                         <p>Zack Montalvo</p>
@@ -40,7 +40,7 @@ const Contact = () => (
                     </div>
                 </div> 
                 <div className="">
-                    <StaticImage src="../images/ananya.png" alt="Ananya Sai" placeholder="blur"/>
+                    <StaticImage src="../images/ananya.png" alt="Picture of Ananya Sai" placeholder="blur"/>
                     <h1>Vice President</h1>
                     <div className="text-center">
                         <p>Ananya Sai</p>
@@ -48,7 +48,7 @@ const Contact = () => (
                     </div>
                 </div>
                 <div className="">
-                    <StaticImage src="../images/Katherine-crop.png" alt="Katherine Hu" placeholder="blur"/>
+                    <StaticImage src="../images/kat-pro.jpg" alt="Picture of Katherine Hu" placeholder="blur"/>
                     <h1>Co-Vice President</h1>
                     <div className="text-center">
                         <p>Katherine Hu</p>
@@ -56,7 +56,7 @@ const Contact = () => (
                     </div>
                 </div>
                 <div className="">
-                    <StaticImage src="../images/Paco.jpg" alt="Paco Amorrortu" placeholder="blur"/>
+                    <StaticImage src="../images/Paco.jpg" alt="Picture of Paco Amorrortu" placeholder="blur"/>
                     <h1>Project Chair</h1>
                     <div className="text-center">
                         <p>Paco Amorrortu</p>
@@ -64,7 +64,7 @@ const Contact = () => (
                     </div>
                 </div>
                 <div className="">
-                    <StaticImage src="../images/Gavin-crop.jpg" alt="Gavin Schultz" placeholder="blur"/>
+                    <StaticImage src="../images/Gavin-crop.jpg" alt="Picture of Gavin Schultz" placeholder="blur"/>
                     <h1>Secretary</h1>
                     <div className="text-center">
                         <p>Gavin Schultz </p>
@@ -72,7 +72,7 @@ const Contact = () => (
                     </div>
                 </div>
                 <div className="">
-                    <StaticImage src="../images/Beckett-crop.jpeg" className="max-w-100" alt="Beckett Wilkinson" placeholder="blur"/>
+                    <StaticImage src="../images/Beckett-crop.jpeg" className="max-w-100" alt="Picture of Beckett Wilkinson" placeholder="blur"/>
                     <h1>Treasurer</h1>
                     <div className="text-center">
                         <p>Beckett Wilkinson</p>
@@ -80,7 +80,7 @@ const Contact = () => (
                     </div>
                 </div>
                 <div className="mb-16">
-                    <StaticImage src="../images/Grant.jpg" alt="Grant Zou" placeholder="blur"/>
+                    <StaticImage src="../images/Grant.jpg" alt="Picture of Grant Zou" placeholder="blur"/>
                     <h1>Webmaster</h1>
                     <div className="text-center">
                         <p>Grant Zou</p>
