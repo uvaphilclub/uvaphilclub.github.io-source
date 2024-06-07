@@ -1,12 +1,51 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { useState, useEffect } from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { Helmet } from "react-helmet"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Profile from "../components/profile"
 
-const Contact = () => ( 
+const Contact = () => {
+    const [profiles, setProfiles] = useState([]);
+
+    useEffect(() => {
+      fetch('https://us-east-1-shared-usea1-02.cdn.hygraph.com/content/clx2dm8fq00r407v12j32u6sq/master', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          query: `
+            {
+              profiles(orderBy: order_ASC) {
+                email
+                name
+                order
+                title
+                profilePicture {
+                  url
+                  
+                }
+              }
+            }
+          `
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data && data.data && data.data.profiles) {
+          setProfiles(data.data.profiles);
+        } else {
+          console.error("Unexpected response format:", data);
+        }
+      })
+      .catch(error => {
+        console.error("Error fetching profiles:", error);
+      });
+    }, []);
+    return( 
     <Layout> 
     <Helmet>
         <title>Contact | The Philosophy Club at UVA</title>
@@ -30,68 +69,20 @@ const Contact = () => (
         </div>
         <div className="max-w-6xl mt-16 mb-16 mx-auto ">
             <h1 className="text-center text-5xl italic font-['Lato']">Meet the Team</h1>
-            <div className="profiles m-10 flex flex-wrap justify-center gap-y-12 gap-x-40 font-['Shanti']">
-                <div className="">
-                    <StaticImage className="overflow-hidden" src="../images/zach_wider.jpg" alt="Picture of Zack Montalvo" placeholder="blur"/>
-                    <h1>President</h1>
-                    <div className="text-center">
-                        <p>Zack Montalvo</p>
-                        <a href="mailto: rqv3jm@virginia.edu">rqv3jm@virginia.edu &#9993;</a>
-                    </div>
-                </div> 
-                <div className="">
-                    <StaticImage src="../images/ananya.png" alt="Picture of Ananya Sai" placeholder="blur"/>
-                    <h1>Vice President</h1>
-                    <div className="text-center">
-                        <p>Ananya Sai</p>
-                        <a href="mailto: xqr8dj@virginia.edu">xqr8dj@virginia.edu &#9993;</a>
-                    </div>
-                </div>
-                <div className="">
-                    <StaticImage src="../images/kat-pro.jpg" alt="Picture of Katherine Hu" placeholder="blur"/>
-                    <h1>Co-Vice President</h1>
-                    <div className="text-center">
-                        <p>Katherine Hu</p>
-                        <a href="mailto: upb6wr@virginia.edu">upb6wr@virginia.edu &#9993;</a>
-                    </div>
-                </div>
-                <div className="">
-                    <StaticImage src="../images/Paco.jpg" alt="Picture of Paco Amorrortu" placeholder="blur"/>
-                    <h1>Project Chair</h1>
-                    <div className="text-center">
-                        <p>Paco Amorrortu</p>
-                        <a href="mailto: zjz4uk@virginia.edu">zjz4uk@virginia.edu &#9993;</a>
-                    </div>
-                </div>
-                <div className="">
-                    <StaticImage src="../images/Gavin-crop.jpg" alt="Picture of Gavin Schultz" placeholder="blur"/>
-                    <h1>Secretary</h1>
-                    <div className="text-center">
-                        <p>Gavin Schultz </p>
-                        <a href="mailto: wbn6ed@virginia.edu">wbn6ed@virginia.edu &#9993;</a>
-                    </div>
-                </div>
-                <div className="">
-                    <StaticImage src="../images/Beckett-crop.jpeg" className="max-w-100" alt="Picture of Beckett Wilkinson" placeholder="blur"/>
-                    <h1>Treasurer</h1>
-                    <div className="text-center">
-                        <p>Beckett Wilkinson</p>
-                        <a href="mailto: hgh6qr@virginia.edu">hgh6qr@virginia.edu &#9993;</a>
-                    </div>
-                </div>
-                <div className="mb-16">
-                    <StaticImage src="../images/Grant.jpg" alt="Picture of Grant Zou" placeholder="blur"/>
-                    <h1>Webmaster</h1>
-                    <div className="text-center">
-                        <p>Grant Zou</p>
-                        <a href="mailto: sth3mm@virginia.edu">sth3mm@virginia.edu &#9993;</a>
-                    </div>
-                </div>
+            <div className="profiles m-10 pb-16 flex flex-wrap justify-center gap-y-12 gap-x-40 font-['Shanti']">
+              { profiles.map(profile => (
+                <Profile
+                  key={profile.email}
+                  email={profile.email}
+                  name={profile.name}
+                  title={profile.title}
+                  image={profile.profilePicture.url}/>))}
             </div>
         </div>
     </div>
     </Layout>
-) 
+    ) 
+}
 
 export const Head = () => <Seo title="Contact" />
 

@@ -1,29 +1,57 @@
 import * as React from "react"
+import {useState, useEffect} from "react";
 import Helmet from "react-helmet"
-import { withPrefix, Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import QuoteComponent from "../components/rotatingQuote"
 import SimpleImageSlider from "react-simple-image-slider"
-import image1 from '../images/IMG_1122.jpg'
-import image2 from '../images/IMG_1126.jpg'
-import image3 from '../images/IMG_1128.jpg'
-import image4 from '../images/IMG_1131.jpg'
 import FadeInFromRight from "../components/fadeInFromRight"
 import FadeInFromLeft from "../components/fadeInFromLeft"
 import FadeInLeftOnScroll from "../components/fadeInLeftOnScroll"
 import FadeInRightOnScroll from "../components/fadeInRightOnScroll"
 
-const slideShowItems = [
-  {url: image1},
-  {url: image2},
-  {url: image3},
-  {url: image4},
-]
+const IndexPage = () => 
+{
+    const[slideShowItems, setSlideShowItems] = useState([]);
+    useEffect(() => {
+        fetch('https://us-east-1-shared-usea1-02.cdn.hygraph.com/content/clx2dm8fq00r407v12j32u6sq/master', {
+            method: 'POST', 
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                query: `
+                {
+                    slideShowImages {
+                        image {
+                          url
+                        }
+                      }
+                }`
+            })
+        })
+    .then(response => response.json())
+    .then(data => {
+        if (data && data.data && data.data.slideShowImages){
+            const images=[];
+            for(let i = 0; i < data.data.slideShowImages.length; i++){
+                images.push({ url: data.data.slideShowImages[i].image.url});
+            }
+            setSlideShowItems(images); 
+        }
+        else {
+            console.error("Unexpected response format:", data);
+        }
+    })
+    .catch(error => {
+    console.error("Error fetching data:", error);
+    });
+    }, []);
 
-const IndexPage = () => (
+    
+   return (
   <Layout>
     <Helmet>
         <title>Home | The Philosophy Club at UVA</title>
@@ -56,6 +84,7 @@ const IndexPage = () => (
                 <div className="innerBevel">
                     <div className="block md:hidden">
                         <SimpleImageSlider 
+                            key={slideShowItems.length} //the key forces the component to rerender once it fetches the images
                             width={325}
                             height={250}
                             images={slideShowItems}
@@ -67,6 +96,7 @@ const IndexPage = () => (
                     </div>
                     <div className="hidden md:block 2xl:hidden">
                         <SimpleImageSlider 
+                            key={slideShowItems.length}
                             width={600}
                             height={428}
                             images={slideShowItems}
@@ -78,6 +108,7 @@ const IndexPage = () => (
                     </div>
                     <div className="hidden 2xl:block">
                         <SimpleImageSlider 
+                            key={slideShowItems.length}
                             width={700}
                             height={500}
                             images={slideShowItems}
@@ -194,7 +225,7 @@ const IndexPage = () => (
     </body>
   </Layout>
 )
-
+}
 /**
  * Head export to define metadata for the page
  *
