@@ -201,7 +201,7 @@ const IndexPage = () =>
         </div>
         <div className="bg-blue">
             <div className="flex flex-wrap flex-col justify-center max-w-4xl mx-4 sm:m-auto "> 
-                <h2 className="text-2xl mt-12 text-center font-['Shanti']">Join the Groupme to stay the most up to date</h2>
+                <h2 className="text-2xl mt-12 text-center font-['Shanti']">Join the <a href="https://groupme.com/join_group/93261535/MxmKm2Fi" className="underline">GroupMe</a> to stay the most up to date!</h2>
                 <div className="flex justify-center flex-wrap mt-8">
                     <div className="size-40">
                         <StaticImage className="rounded-md" src="../images/groupme.jpg" />
