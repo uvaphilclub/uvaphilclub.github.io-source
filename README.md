@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="src/images/phil-icon-placeholder.jpeg" width="60" />
+  <a href="https://www.uvaphilclub.github.io">
+    <img alt="UVA Phil Club Logo" src="src/images/Phil Club Full Logo.png" width="60" />
   </a>
 </p>
 <h1 align="center">
