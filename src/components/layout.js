@@ -6,22 +6,12 @@
  */
 
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import { slide as Menu } from 'react-burger-menu'
 import { Link } from "gatsby"
 
 import ThinHeader from "./thin_header"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
 
   var styles = {
     bmBurgerButton: {

@@ -50,7 +50,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/phil-icon-placeholder.jpeg`, // This path is relative to the root of the site.
+        icon: `src/images/Phil Club Simplified Logo.png`, // This path is relative to the root of the site.
       },
     },
   ],
