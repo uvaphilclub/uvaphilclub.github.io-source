@@ -196,7 +196,7 @@ const IndexPage = () =>
                         <p className="text-lg"> To read or submit visit <a className="underline font-bold text-xl" href="https://the-contemplative-cavalier.vercel.app">https://the-contemplative-cavalier.vercel.app</a></p>
                     </div>
                 </FadeInRightOnScroll>
-                </div>README.md
+                </div>
             </div>
         </div>
         <div className="bg-blue">
