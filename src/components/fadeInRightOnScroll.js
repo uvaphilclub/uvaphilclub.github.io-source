@@ -27,7 +27,7 @@ const FadeInRightOnScroll = ({ children, delay }) => {
   }, [delay]);
 
   return (
-    <div id="fade-in-on-scroll" className={`transition-[transform,opacity] custom-transition transform ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}`}>
+    <div id="fade-in-on-scroll" className={`max-w-full transition-[transform,opacity] custom-transition transform ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}`}>
       {children}
     </div>
   );

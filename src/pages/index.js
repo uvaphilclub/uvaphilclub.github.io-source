@@ -125,7 +125,7 @@ const IndexPage = () =>
             </FadeInFromRight>
         </div>
         <div className="bg-lightsilver">
-            <div className="flex flex-wrap flex-col m-auto px-6 py-16 justify-center"> 
+            <div className="flex flex-wrap flex-col mx-6 py-16 justify-center"> 
                 <div className="flex flex-wrap gap-x-20 justify-center">
                 <FadeInLeftOnScroll>
                     <div className="w-64 self-center">
@@ -175,14 +175,14 @@ const IndexPage = () =>
                     </div>
                 </FadeInRightOnScroll>
                 </div>   
-                <div className="flex flex-wrap gap-x-20 mt-16 justify-center">
+                <div className="flex flex-wrap max-w-full gap-x-20 mt-16 justify-center">
                 <FadeInLeftOnScroll delay={1000}>
                     <div className="w-64 self-center">
                         <h1 className="hidden lg:block text-6xl italic">Also visit</h1>
                     </div>
                 </FadeInLeftOnScroll>
-                <FadeInRightOnScroll delay={1000}>
-                    <div className="max-w-2xl font-medium text-white bg-blue rounded p-6 sm:shadow-[20px_20px_0px_0_rgba(0,0,0,0.3)] font-['Shanti']">
+                <FadeInRightOnScroll className="max-w-full" delay={1000}>
+                    <div className="max-w-full sm:max-w-2xl font-medium text-white bg-blue rounded p-6 sm:shadow-[20px_20px_0px_0_rgba(0,0,0,0.3)] font-['Shanti']">
                         <h2 className="lg:hidden text-3xl">Also visit</h2>
                         <h2 className="text-2xl lg:text-3xl">The Corcoran Department of Philosophy</h2>
                         <p className="text-lg">
@@ -193,7 +193,7 @@ const IndexPage = () =>
                         </p> 
                         <h2 className="text-2xl lg:text-3xl mt-4">The Contemplative Cavalier</h2>
                         <p className="text-lg">UVA's premier undergraudate philosophy journal. All UVA students are welcome to submit.</p>
-                        <p className="text-lg"> To read or submit visit <a className="underline font-bold text-xl" href="https://thecontemplativecavalier.org">https://thecontemplativecavalier.org</a></p>
+                        <p className="text-lg break-words"> To read or submit visit <a className="underline font-bold text-xl" href="https://thecontemplativecavalier.org">https://thecontemplativecavalier.org</a></p>
                     </div>
                 </FadeInRightOnScroll>
                 </div>
