@@ -181,7 +181,7 @@ const IndexPage = () =>
                         <h1 className="hidden lg:block text-6xl italic">Also visit</h1>
                     </div>
                 </FadeInLeftOnScroll>
-                <FadeInRightOnScroll className="max-w-full" delay={1000}>
+                <FadeInRightOnScroll delay={1000}>
                     <div className="max-w-full sm:max-w-2xl font-medium text-white bg-blue rounded p-6 sm:shadow-[20px_20px_0px_0_rgba(0,0,0,0.3)] font-['Shanti']">
                         <h2 className="lg:hidden text-3xl">Also visit</h2>
                         <h2 className="text-2xl lg:text-3xl">The Corcoran Department of Philosophy</h2>
