@@ -58,20 +58,20 @@ const Events = () => {
         </Helmet>
         <div className="">
             <div className="flex flex-col flex-wrap items-center bg-blue pt-12 pb-12">
-                <h1 className="text-4xl italic text-center">Currently Contemplating</h1>
+                <h1 className="text-5xl sm:text-6xl italic text-center text-white">Currently Contemplating</h1>
             </div>
         </div>
-        <div className="max-w-[1075px] min-w-72 mx-auto">
+        <div className="max-w-[1100px] min-w-72 mx-auto">
             <div className="mb-16 pb-16">
             <div className="flex justify-center">
                 <h1 className="lg:text-start text-7xl mt-4 mb-6 font-['Lato']">{currentSemester}</h1>
             </div>
-            <div className="flex flex-wrap justify-center gap-12 bg-dark-gray border-[16px] rounded border-silver p-10 font-['Shanti']">
+            <div className="flex flex-wrap justify-center gap-12 bg-dark-gray border-[16px] rounded border-silver p-10 pt-14 font-['Shanti'] mx-2">
                 {currentEvents.map((event,index)=>(
                     <StickyNote key={index} event={event}/>
                 ))}
                 <div>
-                    <div className= "sticky-note flex flex-wrap flex-col h-64 justify-between w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4 rotate-[-1.5deg] -top-2">
+                    <div className="sticky-note flex flex-wrap flex-col h-56 sm:h-64 justify-between w-56 sm:w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4 rotate-[-1.5deg] -top-2">
                         <div>
                             <p className="text-center text-2xl"></p>
                             <StaticImage src="../../images/the-thinker.png" placeholder="blur" alt="Image of The Thinker"/>

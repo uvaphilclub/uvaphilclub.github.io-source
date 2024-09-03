@@ -49,7 +49,7 @@ const Archive = () => {
         <meta name="description" content="The past events we've hosted"></meta>
     </Helmet>
     <div className="flex flex-col flex-wrap items-center pt-12 pb-12 bg-blue">
-        <h1 className="text-4xl italic text-center">Previously pondered</h1>
+        <h1 className="text-6xl italic text-center text-white">Previously Pondered</h1>
     </div>
     <div className="hidden md:flex flex-col flex-wrap max-w-4xl mx-auto mt-12 pb-16 mb-16 font-['Lato']"> 
         <div className="bg-brown h-24"></div>
@@ -77,7 +77,7 @@ const Archive = () => {
             <div className="basis-5/6 text-2xl self-center"></div>
         </div>
     </div>
-    <div className="md:hidden max-w-md mx-auto text-2xl pb-16 mb-16 font-['Shanti']">
+    <div className="md:hidden max-w-md mx-auto text-2xl pb-6 mb-16 font-['Shanti']">
         {pastSemesters.map((semester, index) => (
             <ResponsiveSemesterArchive key={semester.semester} index={index} semester={semester.semester} events={semester.archivedMeetings}/>
         ))}

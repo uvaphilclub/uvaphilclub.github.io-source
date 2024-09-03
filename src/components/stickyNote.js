@@ -6,7 +6,6 @@ const StickyNote = ({event}) => {
   let angle;
   do{
       angle = (Math.floor(Math.random() * 13) - 6) / 2;
-      console.log(angle)
   }
   while(angle === 0)
   const stickyHover = {
