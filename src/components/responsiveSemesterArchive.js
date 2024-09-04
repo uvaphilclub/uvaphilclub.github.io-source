@@ -1,7 +1,6 @@
 import * as React from "react"
 import { Helmet } from "react-helmet"
 const ResponsiveSemesterArchive = ({index, semester, events}) => {
-    console.log(index)
     return(
       <>
        <Helmet>
@@ -9,7 +8,7 @@ const ResponsiveSemesterArchive = ({index, semester, events}) => {
        </Helmet>
         <div>
             {index === 0 && 
-                <div className="">
+                <div className="mx-3 my-10 px-3 py-6 text-white bg-blue rounded-sm">
                     <h2 className="text-center text-4xl">{semester}</h2>
                     { events.map((meeting,index) => (
                     <div key={index} className="flex flex-row">
@@ -27,7 +26,7 @@ const ResponsiveSemesterArchive = ({index, semester, events}) => {
             }
 
             {index !== 0 &&   
-                <div className="">
+                <div className="mx-3 mb-10 px-3 py-6 text-white bg-blue rounded-sm">
                     <h2 className="text-center text-4xl">{semester}</h2>
                     { events.map((meeting,index) => (
                      <div key={index} className="flex flex-row">

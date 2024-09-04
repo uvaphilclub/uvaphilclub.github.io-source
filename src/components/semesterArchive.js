@@ -3,7 +3,7 @@ import * as React from "react"
 const SemesterArchive = ({index, semester,events}) => {
     return(
         <div>
-            {index == 0 ? 
+            {index === 0 ? 
             (<div className="flex flex-wrap bg-yellow h-14 border-t-2">
               <div className="basis-1/6 border-r-4 border-red"></div>
               <div className="basis-5/6 text-4xl self-center">
@@ -24,8 +24,8 @@ const SemesterArchive = ({index, semester,events}) => {
             </div>)
             }
           
-            { events.map(meeting => (
-            <div key={meeting.title}>
+            { events.map((meeting, index) => (
+            <div key={index}>
                  <div className="flex flex-wrap bg-yellow h-14 border-t-2">
                  <div className="basis-1/6 border-r-4 border-red"></div>
                  <div className="basis-5/6 text-2xl self-center">
