@@ -7,11 +7,11 @@ const ResponsiveSemesterArchive = ({index, semester, events}) => {
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
         <div>
             {index === 0 && 
-                <div className="mx-3 mb-10 mt-10 bg-blue px-3 py-6 text-white rounded-sm">
+                <div className="mx-3 my-10 px-3 py-6 text-white bg-blue rounded-sm">
                     <h2 className="text-center text-4xl">{semester}</h2>
                     { events.map((meeting,index) => (
                     <div key={index} className="flex flex-row">
-                      <i className="fa fa-check-square mr-2 relative top-[1.2rem]"></i>
+                      <i className="relative top-[1.2rem] fa fa-check-square mr-2 "></i>
                       <div>
                         <p className="mt-4 text-wrap">{meeting.meetingTitle}</p>
                         {meeting.guestSpeaker && 
@@ -25,11 +25,11 @@ const ResponsiveSemesterArchive = ({index, semester, events}) => {
             }
 
             {index !== 0 &&   
-                <div className="mb-10 mx-3 px-3 py-6 text-white bg-blue rounded-sm">
+                <div className="mx-3 mb-10 px-3 py-6 text-white bg-blue rounded-sm">
                     <h2 className="text-center text-4xl">{semester}</h2>
                     { events.map((meeting,index) => (
                      <div key={index} className="flex flex-row">
-                      <i className="fa fa-check-square mr-2 relative top-[1.2rem]"></i>
+                      <i className="relative top-[1.2rem] fa fa-check-square mr-2 "></i>
                       <div>
                         <p className="mt-4 text-wrap">{meeting.meetingTitle}</p>
                         {meeting.guestSpeaker && 

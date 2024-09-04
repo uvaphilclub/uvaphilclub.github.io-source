@@ -66,7 +66,7 @@ const Events = () => {
             <div className="flex justify-center">
                 <h1 className="lg:text-start text-7xl mt-4 mb-6 font-['Lato']">{currentSemester}</h1>
             </div>
-            <div className="flex flex-wrap justify-center gap-12 bg-dark-gray border-[16px] rounded border-silver p-10 pt-14 font-['Shanti'] mx-2">
+            <div className="mx-2 flex flex-wrap justify-center gap-12 bg-dark-gray border-[16px] rounded border-silver p-10 pt-14 font-['Shanti']">
                 {currentEvents.map((event,index)=>(
                     <StickyNote key={index} event={event}/>
                 ))}
