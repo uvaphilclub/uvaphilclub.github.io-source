@@ -8,7 +8,7 @@ const ResponsiveSemesterArchive = ({index, semester, events}) => {
        </Helmet>
         <div>
             {index === 0 && 
-                <div className="py-6 text-white bg-blue">
+                <div className="responsiveArchive text-white bg-blue">
                     <h2 className="text-center text-4xl">{semester}</h2>
                     { events.map((meeting,index) => (
                     <div key={index} className="flex flex-row">
@@ -26,7 +26,7 @@ const ResponsiveSemesterArchive = ({index, semester, events}) => {
             }
 
             {index !== 0 &&   
-                <div className=" py-6 text-white bg-blue">
+                <div className="responsiveArchive text-white bg-blue">
                     <h2 className="text-center text-4xl">{semester}</h2>
                     { events.map((meeting,index) => (
                      <div key={index} className="flex flex-row">
