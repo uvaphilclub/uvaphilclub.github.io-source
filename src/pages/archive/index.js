@@ -77,7 +77,7 @@ const Archive = () => {
             <div className="basis-5/6 text-2xl self-center"></div>
         </div>
     </div>
-    <div className="md:hidden max-w-md mx-auto text-2xl pb-6 mb-16 font-['Shanti']">
+    <div className="md:hidden text-2xl pb-6 mb-16 font-['Shanti']">
         {pastSemesters.map((semester, index) => (
             <ResponsiveSemesterArchive key={semester.semester} index={index} semester={semester.semester} events={semester.archivedMeetings}/>
         ))}
