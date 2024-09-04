@@ -1,10 +1,12 @@
 import * as React from "react"
-
+import { Helmet } from "react-helmet"
 const ResponsiveSemesterArchive = ({index, semester, events}) => {
     console.log(index)
     return(
       <>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+       <Helmet>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+       </Helmet>
         <div>
             {index === 0 && 
                 <div className="mx-3 my-10 px-3 py-6 text-white bg-blue rounded-sm">
