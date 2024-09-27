@@ -8,8 +8,8 @@ import ResponsiveSemesterArchive from "../../components/responsiveSemesterArchiv
 
 
 const Archive = () => {
-    const[pastSemesters, setPastSemesters] = useState([]);
-
+    const [pastSemesters, setPastSemesters] = useState([]);
+    const [newsLetters, setNewsLetters] = useState([]);
     useEffect(() => {
         fetch('https://us-east-1-shared-usea1-02.cdn.hygraph.com/content/clx2dm8fq00r407v12j32u6sq/master', {
             method: 'POST', 
@@ -40,6 +40,34 @@ const Archive = () => {
     .catch(error => {
     console.error("Error fetching past events:", error);
     });
+    fetch('https://us-east-1-shared-usea1-02.cdn.hygraph.com/content/clx2dm8fq00r407v12j32u6sq/master', {
+      method: 'POST', 
+      headers: {
+          'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+          query: `
+          {
+            newsletters {
+              title
+              newsletter {
+                url
+              }
+            }
+          }`
+      })
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data && data.data && data.data.newsletters){
+        setNewsLetters(data.data.newsletters);
+      } else {
+        console.error("Unexpected newsletter format: ", data);
+      }
+    })
+    .catch(error => {
+      console.error("Erorr fetching newsletters: ", error);
+    });
     }, []);
 
     return (
@@ -52,6 +80,15 @@ const Archive = () => {
         <h1 className="text-6xl italic text-center text-white">Previously Pondered</h1>
     </div>
     <div className="hidden md:flex flex-col flex-wrap max-w-4xl mx-auto mt-12 pb-16 mb-16 font-['Lato']"> 
+        <h1 className="text-6xl text-center mb-4">Read Our Newsletter</h1>
+        <div>
+          {newsLetters.map((newsLetter, index) => (
+            <a href={newsLetter.newsletter.url} key={index}>{newsLetter.title}</a>
+          ))
+
+          }
+        </div>
+        <h1 className="text-6xl text-center mb-4">Past Meetings</h1>
         <div className="bg-brown h-24"></div>
         {pastSemesters.map((semester, index) => (
             <SemesterArchive key={semester.semester} index={index} semester={semester.semester} events={semester.archivedMeetings}/>
