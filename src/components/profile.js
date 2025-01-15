@@ -8,7 +8,7 @@ const Profile = ({image,name,title,email}) =>
     const pfp = getImage(image)
     console.log(pfp)
     return(
-    <div>
+    <div className="w-56">
         <img className="size-56" src={image} alt={"Picture of " + {name}}></img>
         <h1>{title}</h1>
         <div className="text-center">
