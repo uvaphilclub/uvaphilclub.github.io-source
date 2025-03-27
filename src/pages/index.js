@@ -58,6 +58,7 @@ const IndexPage = () =>
         <meta name="description" content="The official website of the Philosophy Club at UVA"/>
     </Helmet>
    <body className="min-h-screen overflow-x-hidden">
+        <div className="hidden min-h-64 h-auto"></div>
         <div className="flex flex-col xl:flex-row bg-blue justify-center pt-4 pb-20 items-center sm:gap-12">
             <FadeInFromLeft>
             <div className="flex flex-col mb-4  sm:max-w-xl xl:max-w-2xl 2xl:max-w-3xl mx-auto xl:ml-12 2xl:ml-12">
