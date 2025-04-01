@@ -5,11 +5,11 @@ import { Helmet } from "react-helmet"
 import Layout from "../../components/layout"
 import SemesterArchive from "../../components/semesterArchive";
 import ResponsiveSemesterArchive from "../../components/responsiveSemesterArchive";
-
+import Newsletter from "../../components/newsletter";
 
 const Archive = () => {
-    const[pastSemesters, setPastSemesters] = useState([]);
-
+    const [pastSemesters, setPastSemesters] = useState([]);
+    const [newsLetters, setNewsLetters] = useState([]);
     useEffect(() => {
         fetch('https://us-east-1-shared-usea1-02.cdn.hygraph.com/content/clx2dm8fq00r407v12j32u6sq/master', {
             method: 'POST', 
@@ -40,6 +40,34 @@ const Archive = () => {
     .catch(error => {
     console.error("Error fetching past events:", error);
     });
+    fetch('https://us-east-1-shared-usea1-02.cdn.hygraph.com/content/clx2dm8fq00r407v12j32u6sq/master', {
+      method: 'POST', 
+      headers: {
+          'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+          query: `
+          {
+            newsletters(orderBy: date_DESC)  {
+              title
+              newsletter {
+                url
+              }
+            }
+          }`
+      })
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data && data.data && data.data.newsletters){
+        setNewsLetters(data.data.newsletters);
+      } else {
+        console.error("Unexpected newsletter format: ", data);
+      }
+    })
+    .catch(error => {
+      console.error("Erorr fetching newsletters: ", error);
+    });
     }, []);
 
     return (
@@ -52,6 +80,25 @@ const Archive = () => {
         <h1 className="text-6xl italic text-center text-white">Previously Pondered</h1>
     </div>
     <div className="hidden md:flex flex-col flex-wrap max-w-4xl mx-auto mt-12 pb-16 mb-16 font-['Lato']"> 
+        <h1 className="text-6xl text-center mb-4">Read Our Newsletter</h1>
+        <div>
+          {newsLetters.map((newsletter, index) => (
+            <Newsletter newsletter={newsletter} index={index} key={index}/>
+          ))}
+        </div>
+        <div className="flex justify-center border-2 bg-red ml-32 mr-20 h-11 ">
+        <p className="text-xl bg-yellow border-2 inline-block px-1 my-1">The Meditations</p>
+          <div className="w-6 ml-64 bg-yellow"></div>
+        </div>
+        <div className="flex justify-center border-2 bg-blue rounded-sm ml-20 mr-32 pl-2">
+            <p className="text-xl bg-yellow border-2 inline-block px-1 my-1">The Republic</p>
+            <div className="w-6 ml-64 bg-yellow"></div>
+        </div>
+        <div className="flex justify-center border-2 bg-red rounded-sm ml-32 mr-20 h-11">
+        <p className="text-xl bg-yellow border-2 inline-block px-1 my-1">The Analects</p>
+          <div className="w-6 ml-64 bg-yellow"></div>
+        </div>
+        <h1 className="text-6xl text-center mb-4 mt-4">Past Meetings</h1>
         <div className="bg-brown h-24"></div>
         {pastSemesters.map((semester, index) => (
             <SemesterArchive key={semester.semester} index={index} semester={semester.semester} events={semester.archivedMeetings}/>
@@ -78,9 +125,27 @@ const Archive = () => {
         </div>
     </div>
     <div className="md:hidden text-2xl pb-6 mb-16 font-['Shanti']">
-        {pastSemesters.map((semester, index) => (
-            <ResponsiveSemesterArchive key={semester.semester} index={index} semester={semester.semester} events={semester.archivedMeetings}/>
+      <h1 className="mt-4 mb-2 text-4xl text-center">Read Our Newsletter</h1>
+      <div>
+        {newsLetters.map((newsletter, index) => (
+          <Newsletter newsletter={newsletter} index={index} key={index}/>
         ))}
+      </div>
+      <div className="flex justify-center border-2 bg-red ml-6 mr-3 rounded-sm sm:ml-32 sm:mr-20 h-11 ">
+      <p className="text-xl bg-yellow border-2 inline-block px-1 my-1">The Meditations</p>
+        <div className="w-6 ml-64 bg-yellow hidden sm:block"></div>
+      </div>
+      <div className="flex justify-center border-2 bg-blue ml-3 mr-6 rounded-sm sm:ml-20 sm:mr-32 pl-2">
+          <p className="text-xl bg-yellow border-2 inline-block px-1 my-1">The Republic</p>
+          <div className="w-6 ml-64 bg-yellow hidden sm:block"></div>
+      </div>
+      <div className="flex justify-center border-2 bg-red ml-6 mr-3 rounded-sm sm:ml-32 sm:mr-20 h-11">
+      <p className="text-xl bg-yellow border-2 inline-block px-1 my-1">The Analects</p>
+        <div className="w-6 ml-64 bg-yellow hidden sm:block"></div>
+      </div>
+      {pastSemesters.map((semester, index) => (
+          <ResponsiveSemesterArchive key={semester.semester} index={index} semester={semester.semester} events={semester.archivedMeetings}/>
+      ))}
     </div>
     </Layout>
 )
