@@ -87,15 +87,15 @@ const Archive = () => {
           ))}
         </div>
         <div className="flex justify-center border-2 bg-red ml-32 mr-20 h-11 ">
-        <p className="text-xl bg-yellow border-2 inline-block px-1 my-1">The Meditations</p>
+        <p className="text-xl bg-yellow border-2 inline-block px-1 my-1">Meditations on the Beam</p>
           <div className="w-6 ml-64 bg-yellow"></div>
         </div>
         <div className="flex justify-center border-2 bg-blue rounded-sm ml-20 mr-32 pl-2">
-            <p className="text-xl bg-yellow border-2 inline-block px-1 my-1">The Republic</p>
+            <p className="text-xl bg-yellow border-2 inline-block px-1 my-1">A Treatise on Chairs</p>
             <div className="w-6 ml-64 bg-yellow"></div>
         </div>
         <div className="flex justify-center border-2 bg-red rounded-sm ml-32 mr-20 h-11">
-        <p className="text-xl bg-yellow border-2 inline-block px-1 my-1">The Analects</p>
+        <p className="text-xl bg-yellow border-2 inline-block px-1 my-1">On Donuts</p>
           <div className="w-6 ml-64 bg-yellow"></div>
         </div>
         <h1 className="text-6xl text-center mb-4 mt-4">Past Meetings</h1>
@@ -103,9 +103,12 @@ const Archive = () => {
         {pastSemesters.map((semester, index) => (
             <SemesterArchive key={semester.semester} index={index} semester={semester.semester} events={semester.archivedMeetings}/>
         ))}
+        
         <div className="flex flex-wrap bg-yellow h-14 border-t-2">
             <div className="basis-1/6 border-r-4 border-red"></div>
-            <div className="basis-5/6 text-2xl self-center"></div>
+            <div className="basis-5/6 text-2xl self-center">
+            <p className="ml-16">First meeting: April 25th, 2023</p>
+            </div>
         </div>
         <div className="flex flex-wrap bg-yellow h-14 border-t-2">
             <div className="basis-1/6 border-r-4 border-red"></div>
@@ -132,20 +135,21 @@ const Archive = () => {
         ))}
       </div>
       <div className="flex justify-center border-2 bg-red ml-6 mr-3 rounded-sm sm:ml-32 sm:mr-20 h-11 ">
-      <p className="text-xl bg-yellow border-2 inline-block px-1 my-1">The Meditations</p>
+      <p className="text-xl bg-yellow border-2 inline-block px-1 my-1">Meditations on the Beam</p>
         <div className="w-6 ml-64 bg-yellow hidden sm:block"></div>
       </div>
       <div className="flex justify-center border-2 bg-blue ml-3 mr-6 rounded-sm sm:ml-20 sm:mr-32 pl-2">
-          <p className="text-xl bg-yellow border-2 inline-block px-1 my-1">The Republic</p>
+          <p className="text-xl bg-yellow border-2 inline-block px-1 my-1">A Treatise on Chairs</p>
           <div className="w-6 ml-64 bg-yellow hidden sm:block"></div>
       </div>
       <div className="flex justify-center border-2 bg-red ml-6 mr-3 rounded-sm sm:ml-32 sm:mr-20 h-11">
-      <p className="text-xl bg-yellow border-2 inline-block px-1 my-1">The Analects</p>
+      <p className="text-xl bg-yellow border-2 inline-block px-1 my-1">On Donuts</p>
         <div className="w-6 ml-64 bg-yellow hidden sm:block"></div>
       </div>
       {pastSemesters.map((semester, index) => (
           <ResponsiveSemesterArchive key={semester.semester} index={index} semester={semester.semester} events={semester.archivedMeetings}/>
       ))}
+      <p className="text-center">First meeting: April 25th, 2023</p>
     </div>
     </Layout>
 )
