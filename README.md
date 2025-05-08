@@ -8,7 +8,7 @@
   The Philosophy Club at UVA
 </h1>
 
-The source code for the website of The Philosophy Club at UVA. The deployment build is at https://github.com/uvaphilclub/uvaphilclub.github.io. 
+The source code for the website of The Philosophy Club at UVA. The deployment build is at https://github.com/uvaphilclub/uvaphilclub.github.io. Read this and then the wiki for more information.
 
 ##  Quick start
 
