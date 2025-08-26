@@ -70,12 +70,11 @@ body{
  transition: transform 0.3s ease;
 }
 
-.sticky-note:hover, .sticky-note:focus {
-  box-shadow:10px 10px 7px rgba(0,0,0,.7);
-  transform: scale(1.25);
-  position:relative;
-  z-index:5;
-  transition: transform 0.3s ease;
+@layer components {
+  .sticky-note:hover,
+  .sticky-note:focus {
+    @apply shadow-[10px_10px_7px_rgba(0,0,0,.7)] scale-110 relative z-10 transition-transform duration-300;
+  }
 }
 
 .outerBevel { /* of frame */
