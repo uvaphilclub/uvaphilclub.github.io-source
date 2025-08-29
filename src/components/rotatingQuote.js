@@ -10,7 +10,8 @@ const QuoteComponent = () => {
     '"Funny rotating quote"', 
     '"What don\'t you know that you don\'t know?"',
     '"Calculating the answer to the Ultimate Question of Life, the Universe, and Everything..."',
-    '"42!"'
+    '"42!"', 
+    '"Live as though you will die tomorrow, learn as though you will live forever"'
     ]; // Array of texts
   const [randomText, setRandomText] = useState(''); // State to hold random text
   const [isSpecialQuote, setIsSpecialQuote] = useState(false); 

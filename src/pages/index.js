@@ -192,9 +192,6 @@ const IndexPage = () =>
                         <p className="text-lg">
                             Learn more about the UVA Department of Philosophy at: <span><a className="underline font-bold text-xl" href="https://philosophy.virginia.edu/">https://philosophy.virginia.edu/</a></span>
                         </p> 
-                        <h2 className="text-2xl lg:text-3xl mt-4">The Contemplative Cavalier</h2>
-                        <p className="text-lg">UVA's premier undergraudate philosophy journal. All UVA students are welcome to submit.</p>
-                        <p className="text-lg break-words"> To read or submit visit <a className="underline font-bold text-xl" href="https://thecontemplativecavalier.org">https://thecontemplativecavalier.org</a></p>
                     </div>
                 </FadeInRightOnScroll>
                 </div>
