@@ -73,11 +73,6 @@ const Events = () => {
                 <div>
                     <div className="sticky-note flex flex-wrap flex-col h-56 sm:h-64 justify-between w-56 sm:w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4 rotate-[-1.5deg] -top-2">
                         <div>
-                            <p className="text-center text-4xl">Meeting Dates TBD</p>
-                        </div>
-                    </div>
-                    <div className="sticky-note flex flex-wrap flex-col h-56 sm:h-64 justify-between w-56 sm:w-64 bg-yellow shadow-[5px_5px_7px_rgba(33,33,33,.7)] m-4 p-4 rotate-[-1.5deg] -top-2">
-                        <div>
                             <p className="text-center text-2xl"></p>
                             <StaticImage src="../../images/the-thinker.png" placeholder="blur" alt="Image of The Thinker"/>
                         </div>
