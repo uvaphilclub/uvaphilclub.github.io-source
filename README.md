@@ -105,3 +105,16 @@ Most of the descriptions here are leftover from the default readme
 
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+## Hygraph 
+
+This project uses Hygraph, a content management system that allows you to update content of the website without modifying the source code. The source code queries Hygraph for the data instead. You will need access to the Hygraph project which you can get from the previous webmaster. 
+
+# How Hygraph works
+
+Hygraph has two important features: Schema and Content. Schema defines the data format of your content. For example, the `Profile` schema has the attributes `Title`, `Name`, `Email`, `Profile Picture`, and `Order`. 
+![Profile Hygraph Schema](./Readme Images/Screenshot 2026-09-03 190213.png) 
+
+The profile schema is used on the Contact page of the website and you can see that each attribute in the schema corresponds to some part of the displayed profile. The attributes tell you about 
+
+
