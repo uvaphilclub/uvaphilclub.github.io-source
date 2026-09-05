@@ -113,7 +113,7 @@ This project uses Hygraph, a content management system that allows you to update
 # How Hygraph works
 
 Hygraph has two important features: Schema and Content. Schema defines the data format of your content. For example, the `Profile` schema has the attributes `Title`, `Name`, `Email`, `Profile Picture`, and `Order`. 
-![Profile Hygraph Schema](./Readme Images/Screenshot 2026-09-03 190213.png) 
+![Profile Hygraph Schema](https://github.com/uvaphilclub/uvaphilclub.github.io-source/blob/main/Readme%20Images/Screenshot%202026-09-03%20190213.png) 
 
 The profile schema is used on the Contact page of the website and you can see that each attribute in the schema corresponds to some part of the displayed profile. The attributes tell you about what kind of data belong to the attribute, for example Title is a single line of text, a string, and required. Hovering over the field let's you edit the field. 
 ![Edit field](Readme Images/Screenshot 2026-09-05 135522)
