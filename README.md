@@ -115,6 +115,14 @@ This project uses Hygraph, a content management system that allows you to update
 Hygraph has two important features: Schema and Content. Schema defines the data format of your content. For example, the `Profile` schema has the attributes `Title`, `Name`, `Email`, `Profile Picture`, and `Order`. 
 ![Profile Hygraph Schema](./Readme Images/Screenshot 2026-09-03 190213.png) 
 
-The profile schema is used on the Contact page of the website and you can see that each attribute in the schema corresponds to some part of the displayed profile. The attributes tell you about 
+The profile schema is used on the Contact page of the website and you can see that each attribute in the schema corresponds to some part of the displayed profile. The attributes tell you about what kind of data belong to the attribute, for example Title is a single line of text, a string, and required. Hovering over the field let's you edit the field. 
+![Edit field](Readme Images/Screenshot 2026-09-05 135522)
+
+Content is the actual entries of data, a particular profile with the fields populated with real data. This is the data that appears on the site. 
+![Edit profile](./Readme Images/Screenshot 2026-09-03 190828) 
+
+After making your changes, make sure to hit publish in the top right corner for the changes to go live. 
+
+
 
 
