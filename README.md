@@ -106,11 +106,11 @@ Most of the descriptions here are leftover from the default readme
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-## Hygraph 
+# Hygraph 
 
 This project uses Hygraph, a content management system that allows you to update content of the website without modifying the source code. The source code queries Hygraph for the data instead. You will need access to the Hygraph project which you can get from the previous webmaster. 
 
-# How Hygraph works
+## How Hygraph works
 
 Hygraph has two important features: Schema and Content. Schema defines the data format of your content. For example, the `Profile` schema has the attributes `Title`, `Name`, `Email`, `Profile Picture`, and `Order`. 
 ![Profile Hygraph Schema](https://github.com/uvaphilclub/uvaphilclub.github.io-source/blob/main/Readme%20Images/Screenshot%202026-09-03%20190213.png) 
