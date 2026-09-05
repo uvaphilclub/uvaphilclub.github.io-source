@@ -116,10 +116,10 @@ Hygraph has two important features: Schema and Content. Schema defines the data 
 ![Profile Hygraph Schema](https://github.com/uvaphilclub/uvaphilclub.github.io-source/blob/main/Readme%20Images/Screenshot%202026-09-03%20190213.png) 
 
 The profile schema is used on the Contact page of the website and you can see that each attribute in the schema corresponds to some part of the displayed profile. The attributes tell you about what kind of data belong to the attribute, for example Title is a single line of text, a string, and required. Hovering over the field let's you edit the field. 
-![Edit field](Readme Images/Screenshot 2026-09-05 135522)
+![Edit field](https://github.com/uvaphilclub/uvaphilclub.github.io-source/blob/main/Readme%20Images/Screenshot%202026-09-05%20135522.png)
 
 Content is the actual entries of data, a particular profile with the fields populated with real data. This is the data that appears on the site. 
-![Edit profile](./Readme Images/Screenshot 2026-09-03 190828) 
+![Edit profile](https://github.com/uvaphilclub/uvaphilclub.github.io-source/blob/main/Readme%20Images/Screenshot%202026-09-03%20190254.png) 
 
 After making your changes, make sure to hit publish in the top right corner for the changes to go live. 
 
